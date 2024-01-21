@@ -50,7 +50,7 @@ while True:
             x=int(Momentos["m10"]/Momentos["m00"])
             y=int(Momentos["m01"]/Momentos["m00"])
 
-            if area<9000 and area>8000:
+            if area<8700 and area>8000:
                 font=cv2.FONT_HERSHEY_SIMPLEX
                 cv2.putText(imagen_A6, "100 COP",(x,y) , font, 0.75, (0,255,0),2)
                 suma1=suma1+100
@@ -58,9 +58,10 @@ while True:
             if area<10000 and area>9300:
                 font=cv2.FONT_HERSHEY_SIMPLEX
                 cv2.putText(imagen_A6, "200 COP",(x,y) , font, 0.75, (0,255,0),2)
+                cv2.putText(imagen_A6, f"Sumatoria: {total} COP",(140,50) , cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 255),2)
+                print("Sumatoria total en pesos:",round(total,2))
                 suma2=suma2+200
         total=suma1+suma2
-        print("Sumatoria total en pesos:",round(total,2))
         cv2.imshow("Imagen A6", imagen_A6)
         cv2.imshow("camara", camara)
     if cv2.waitKey(1) == ord('q'):
