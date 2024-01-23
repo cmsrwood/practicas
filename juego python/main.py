@@ -13,7 +13,7 @@ y = 10
 #Velocidad
 x_speed = 0
 y_speed = 0
-personaje=pg.image.load('img/personaje.jpg')
+personaje=pg.image.load('juego python/personaje.jpg')
 while True:
 	for event in pg.event.get():
 		if event.type == pg.QUIT:
