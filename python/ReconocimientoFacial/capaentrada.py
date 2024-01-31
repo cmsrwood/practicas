@@ -11,7 +11,7 @@ else:
     pass
      
 camara=cv.VideoCapture('ElonMusk.mp4')
-ruidos=cv.CascadeClassifier('C:/Users/Dell/Documents/GitHub/practicas/python/ReconocimientoFacial/data\haarcascade_frontalface_default.xml')
+ruidos=cv.CascadeClassifier('C:/Users/Dell/Documents/GitHub/practicas/python/ReconocimientoFacial\haarcascade_frontalface_default.xml')
 id=0
 while True:
     respuesta,captura=camara.read()
