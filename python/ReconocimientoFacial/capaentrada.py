@@ -24,7 +24,7 @@ while True:
 
     for (x,y,e1,e2) in cara: 
         cv.rectangle(captura,(x,y),(x+e1,y+e2),(0,255,0),2)
-        rostrocapturado=idcaptura[y:y+e1,x:x+e2]
+        rostrocapturado=idcaptura[y:y+e2,x:x+e1]
         rostrocapturado=cv.resize(rostrocapturado,(160,160),interpolation=cv.INTER_CUBIC)
         cv.imwrite(rutacompleta+'/imagen_{}.jpg'.format(id),rostrocapturado)
         id+=1
