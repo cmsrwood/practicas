@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 import os
 import imutils
-modelo='Fotos Dilan'
+modelo='Fotos Elon musk'
 ruta1='C:/Users/Dell/Documents/GitHub/practicas/python/ReconocimientoFacial'
 rutacompleta=ruta1+'/'+modelo
 if not os.path.exists(rutacompleta):
@@ -10,7 +10,7 @@ if not os.path.exists(rutacompleta):
 else:
     pass
      
-camara=cv.VideoCapture(0)
+camara=cv.VideoCapture('ElonMusk.mp4')
 ruidos=cv.CascadeClassifier('C:/Users/Dell/Documents/GitHub/practicas/python/ReconocimientoFacial/data\haarcascade_frontalface_default.xml')
 id=0
 while True:
