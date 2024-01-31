@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 import os
-
+import imutils
 modelo='Fotos Dilan'
 ruta1='C:/Users/Dell/Documents/GitHub/practicas/python/ReconocimientoFacial'
 rutacompleta=ruta1+'/'+modelo
@@ -17,14 +17,21 @@ while True:
     respuesta,captura=camara.read()
     if respuesta==False:
         break
+    captura=imutils.resize(captura,width=640)
     grises=cv.cvtColor(captura,cv.COLOR_BGR2GRAY)
-    cara=ruidos.detectMultiScale(grises,1.3,5)
     idcaptura=captura.copy()
-    
+    cara=ruidos.detectMultiScale(grises,1.3,5)
+
     for (x,y,e1,e2) in cara: 
         cv.rectangle(captura,(x,y),(x+e1,y+e2),(0,255,0),2)
+        rostrocapturado=idcaptura[y:y+e1,x:x+e2]
+        rostrocapturado=cv.resize(rostrocapturado,(160,160),interpolation=cv.INTER_CUBIC)
+        cv.imwrite(rutacompleta+'/imagen_{}.jpg'.format(id),rostrocapturado)
+        id+=1
+        
+        
     cv.imshow("Resultado",captura)
-    if cv.waitKey(1)==ord('q'):
+    if id==351:
         break
 camara.release()
 cv.destroyAllWindows()
