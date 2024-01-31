@@ -3,7 +3,7 @@ import numpy as np
 import os
 import imutils
 modelo='Fotos Elon musk'
-ruta1='C:/Users/Dell/Documents/GitHub/practicas/python/ReconocimientoFacial'
+ruta1='C:/Users/Dell/Documents/GitHub/practicas/python/ReconocimientoFacial/data'
 rutacompleta=ruta1+'/'+modelo
 if not os.path.exists(rutacompleta):
     os.makedirs(rutacompleta)
