@@ -66,7 +66,7 @@ b4=False
 b5=False
 b6=False
 #canciones 
-canciones=["smooth","I’m-So-Sorry","by-the-way"]
+canciones=["smooth","I’m-So-Sorry","by-the-way","Iron-Man"]
 numero_cancion=0
 pg.mixer.music.load(f"./audios/{canciones[numero_cancion]}.mp3")
 error= pg.mixer.Sound(f"./sounds/error.wav")
@@ -107,7 +107,7 @@ def events():
                 pg.mixer.music.load(f"./audios/{canciones[numero_cancion]}.mp3")
                 
                 centecimas=music_time()
-                Partitura=open(f"data_{canciones[0]}.txt", "r")
+                Partitura=open(f"data_{canciones[numero_cancion]}.txt", "r")
                 play_song=True 
                 nota=Partitura.readline()
                 score_player_1=0
