@@ -1,9 +1,9 @@
 import tweepy
 
-consumer_key="2SWmATMWKtpDAjMaiYfnjvGnG"
-consumer_secret="m4MPLWmgCsrNPcWPNuetnM6UNB4b20k0gpGM0Vf7hfweyjv5uV"
-access_token="1438868102968643585-b8iPeAQ0gFiBWPt2lv9PQkWnYDEehP"
-access_token_secret="XulHS5stJrn2LZ7krQS7Sb5Vd1AUImW8Q2r5jsr47ZHnl"
+consumer_key="ooYkCWlY1Q4K9fclO18EeLBWE"
+consumer_secret="SMxSJhrfosmcZMe2qK50fbF2zceXeKdyYi4XQWZZDdqgI4oXVW"
+access_token="1438868102968643585-aYdpkquXgZ30HUwTKULddoAHH8BaEq"
+access_token_secret="BcRsAOi97QOYqSb38Ct7LSZJIQTRs6NZ0Ekgv1EigtQtq"
 
 #autenticar
 auth= tweepy.OAuthHandler(consumer_key, consumer_secret)
