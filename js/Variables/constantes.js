@@ -1,0 +1,4 @@
+const MI_CONSTANTE=15;
+console.log(MI_CONSTANTE);
+const SEGUNDOS_POR_MINUTO=60;
+console.log(SEGUNDOS_POR_MINUTO)
