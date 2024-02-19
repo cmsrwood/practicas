@@ -7,4 +7,4 @@ while c<c_doble:
     c+=i
     meses+=1
     print(f"Mes #{meses}")
-    print(c)
+    print(f"{c}\n")
