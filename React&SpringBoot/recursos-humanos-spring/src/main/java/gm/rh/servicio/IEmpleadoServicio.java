@@ -1,2 +1,16 @@
-package gm.rh.servicio;public interface IEmpleadoServicio {
+package gm.rh.servicio;
+
+import gm.rh.modelo.Empleado;
+
+import java.util.List;
+
+public interface IEmpleadoServicio {
+    public List<Empleado> listarEmpleados();
+
+    public Empleado buscarEmpleadoPorId(Integer idEmpelado);
+
+    public Empleado guardarEmpleado(Empleado empleado);
+
+    public void eliminarEmpleado(Empleado empleado);
+
 }
