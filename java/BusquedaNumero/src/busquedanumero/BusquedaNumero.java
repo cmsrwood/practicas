@@ -14,17 +14,17 @@ public class BusquedaNumero {
     }
 
     public static void main(String[] args) {
-        String sizeInput = JOptionPane.showInputDialog(null, "Ingrese el tamaño del array:");
-        int tamañoArray = Integer.parseInt(sizeInput);
+        String tamaño = JOptionPane.showInputDialog(null, "Ingrese el tamaño del array:");
+        int tamañoArray = Integer.parseInt(tamaño);
 
         int[] numeros = new int[tamañoArray];
 
         for (int i = 0; i < tamañoArray; i++) {
-            String valorInput = JOptionPane.showInputDialog(null, "Ingrese el valor para el índice " + i + ":");
-            numeros[i] = Integer.parseInt(valorInput);
+            String valor = JOptionPane.showInputDialog(null, "Ingrese el valor #" + (i+1) + ":");
+            numeros[i] = Integer.parseInt(valor);
         }
 
-        String input = JOptionPane.showInputDialog(null, "Ingrese un número entero a buscar:");
+        String input = JOptionPane.showInputDialog(null, "Ingrese el número buscar:");
         int numeroBuscado = Integer.parseInt(input);
 
         boolean encontrado = buscarNumero(numeros, numeroBuscado);
