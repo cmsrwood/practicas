@@ -10,8 +10,10 @@ public class Automovil {
     tipoDeAutomovil tipoAutomovil;
     public enum Color{BLANCO,NEGRO,ROJO,NARANJA,AMARILLO,VERDE,AZUL,VIOLETA};
     Color color;
+    boolean automatico;
+    int multa;
 
-    public Automovil(String marca, int modelo, int motor,int puertas, int velocidadMaxima, int velocidadActual, tipoDeCombustible tipoCombustible, tipoDeAutomovil tipoAutomovil, Color color) {
+    public Automovil(String marca, int modelo, int motor,int puertas, int velocidadMaxima, int velocidadActual, tipoDeCombustible tipoCombustible, tipoDeAutomovil tipoAutomovil, Color color,boolean automatico,int multa) {
         this.marca = marca;
         this.modelo = modelo;
         this.motor=motor;
@@ -21,6 +23,8 @@ public class Automovil {
         this.tipoCombustible = tipoCombustible;
         this.tipoAutomovil = tipoAutomovil;
         this.color = color;
+        this.automatico=automatico;
+        this.multa=multa;
     }
 
     public String getMarca() {
@@ -34,6 +38,15 @@ public class Automovil {
     public int getPuertas() {
         return puertas;
     }
+
+    public int getMotor() {
+        return motor;
+    }
+
+    public boolean isAutomatico() {
+        return automatico;
+    }
+    
 
     public int getVelocidadMaxima() {
         return velocidadMaxima;
@@ -67,6 +80,14 @@ public class Automovil {
         this.puertas = puertas;
     }
 
+    public void setMotor(int motor) {
+        this.motor = motor;
+    }
+
+    public void setAutomatico(boolean automatico) {
+        this.automatico = automatico;
+    }
+    
     public void setVelocidadMaxima(int velocidadMaxima) {
         this.velocidadMaxima = velocidadMaxima;
     }
@@ -88,7 +109,8 @@ public class Automovil {
     }
     public void acelerar(int velocidadAcelerar){
         if (velocidadAcelerar>this.velocidadMaxima){
-            
+            this.multa+=1;
+            System.out.println("USTED HA SIDO MULTADO\nNumero de multas: "+this.multa);
         }
         else {
             System.out.println("Acelerando...");
