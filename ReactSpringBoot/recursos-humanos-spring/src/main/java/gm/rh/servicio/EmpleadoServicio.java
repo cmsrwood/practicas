@@ -19,9 +19,7 @@ public class EmpleadoServicio implements IEmpleadoServicio {
 
     @Override
     public Empleado buscarEmpleadoPorId(Integer idEmpleado) {
-        Empleado empleado;
-        empleado = empleadoRepositorio.findById(idEmpleado).orElse(null);
-        return empleado;
+        return empleadoRepositorio.findById(idEmpleado).orElse(null);
     }
 
     @Override
