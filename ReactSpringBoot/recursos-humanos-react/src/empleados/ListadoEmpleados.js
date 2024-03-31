@@ -14,8 +14,6 @@ export default function ListadoEmpleados() {
 
     const cargarEmpleados = async () => {
         const resultado = await axios.get(urlBase);
-        console.log("Resultado cargar empleados");
-        console.log(resultado.data);
         setEmpleados(resultado.data);
     }
 
@@ -36,7 +34,6 @@ export default function ListadoEmpleados() {
         </thead>
         <tbody>
             {
-            //Iteramos el arreglo de empleados
             empleados.map((empleado, indice) => (
                 <tr key={indice}>
                 <th scope="row">{empleado.idEmpleado}</th>
