@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.*;
 
 import org.slf4j.Logger;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 //http://localhost:8080/rh-app/
@@ -43,4 +45,31 @@ public class EmpleadoControlador {
             }
             return ResponseEntity.ok(empleado);
         }
+        @PutMapping("empleados/{id}")
+        public ResponseEntity<Empleado>
+        actualizarEmpleado(@PathVariable Integer id, @RequestBody Empleado empleadoRecibido){
+            Empleado empleado = empleadoServicio.buscarEmpleadoPorId(id);
+            if (empleado == null){
+                throw  new RecursoNoEncontradoExcepcion("El id del empleado no existe: " + id);
+            }
+            empleado.setNombre(empleadoRecibido.getNombre());
+            empleado.setDepartamento(empleadoRecibido.getDepartamento());
+            empleado.setSueldo(empleadoRecibido.getSueldo());
+            empleadoServicio.guardarEmpleado(empleado);
+            return ResponseEntity.ok(empleado);
+        }
+        @DeleteMapping("/empleados/{id}")
+        public ResponseEntity<Map<String,Boolean>>
+            eliminarEmpleado(@PathVariable Integer id){
+            Empleado empleado = empleadoServicio.buscarEmpleadoPorId(id);
+            if (empleado==null){
+                throw new RecursoNoEncontradoExcepcion("El id recibido no existe: "+id);
+            }
+            empleadoServicio.eliminarEmpleado(empleado);
+            //Json {"Eliminado":"True"}
+            Map<String, Boolean> respuesta = new HashMap<>();
+            respuesta.put("Eliminado", Boolean.TRUE);
+            return ResponseEntity.ok(respuesta);
+        }
 }
+
