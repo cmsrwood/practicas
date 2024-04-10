@@ -1,10 +1,12 @@
 package gm.rh.controlador;
 
 
+import gm.rh.excepcion.RecursoNoEncontradoExcepcion;
 import gm.rh.modelo.Empleado;
 import gm.rh.servicio.IEmpleadoServicio;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import org.slf4j.Logger;
@@ -32,4 +34,13 @@ public class EmpleadoControlador {
             logger.info("El empleado a agregar: "+ empleado);
             return empleadoServicio.guardarEmpleado(empleado);
         }
-    }
+        @GetMapping("/empleados/{id}")
+        public ResponseEntity<Empleado>
+        obtenerEmpleadoPorID(@PathVariable Integer id){
+            Empleado empleado= empleadoServicio.buscarEmpleadoPorId(id);
+            if (empleado==null){
+                throw new RecursoNoEncontradoExcepcion("No se encontro el empelado con id: "+id);
+            }
+            return ResponseEntity.ok(empleado);
+        }
+}
