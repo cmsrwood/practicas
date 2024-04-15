@@ -3,13 +3,14 @@ import ListaUsuario from './usuarios/ListarUsuario';
 import AgregarUsuario from './usuarios/AgregarUsuario';
 import UsuarioIndividual from './usuarios/UsuarioIndividual';
 import EditarUsuario from './usuarios/EditarUsuario';
+import Navegacion from './Navegacion';
 
 
 function App() {
   return (
-    <div className="container-fluid text-center">
-      <h1>Crud MERN</h1>
+    <div className="text-center">
       <BrowserRouter>
+      <Navegacion></Navegacion>
         <Routes>
           <Route exact path='/' element={<ListaUsuario/>}></Route>
           <Route exact path='/agregarusuario' element={<AgregarUsuario/>}></Route>
