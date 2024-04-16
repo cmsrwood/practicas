@@ -2,6 +2,10 @@ const express = require ('express')
 const app = express()
 const archivoDB = require('./conexion')
 
+const rutausuario = require('./rutas/usuario')
+
+app.use('/api/usuario',rutausuario)
+
 app.get('/',(req,res)=>{
     res.end('ola')
 })
