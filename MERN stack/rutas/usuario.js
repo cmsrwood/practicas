@@ -14,6 +14,7 @@ const eschemausuario = new eschema({
 const ModeloUsuario = mongoose.model('usuarios', eschemausuario)
 module.exports = router
 
+//Agregar usuario
 router.post('/agregarusuario', (req, res) => {
     const nuevousuario = new ModeloUsuario({
         nombre: req.body.nombre,
@@ -24,6 +25,18 @@ router.post('/agregarusuario', (req, res) => {
     nuevousuario.save(function(err){
         if(!err){
             res.send('Usuario agregado correctamente')
+        }else{
+            res.send(err)
+        }
+    })
+})
+
+
+//Obtener todos los usuarios
+router.get('/obtenerusuarios', (req, res) =>{
+    ModeloUsuario.find({}, function(docs, err){
+        if(!err){
+            res.send(docs)
         }else{
             res.send(err)
         }
