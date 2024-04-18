@@ -3,7 +3,7 @@ import uniquid from 'uniqid'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 
-function AgregarUsuario(){
+export default function AgregarUsuario(){
 
     //Hooks
     const[nombre, setNombre]=useState('')
@@ -60,4 +60,3 @@ function AgregarUsuario(){
     )
 }
 
-export default AgregarUsuario
