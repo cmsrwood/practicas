@@ -1,9 +1,9 @@
-const mongoose = require ('mongoose')
-mongoose.connect('mongodb://localhost:27017/crudmernstack')
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://127.0.0.1:27017/crudmernstack');
 
 const objetobd = mongoose.connection
 
-objetobd.on('connected',()=>{console.log("Conexion exitosa a MongoDB")})
-objetobd.on('error',()=>{console.log("Error al conectar a MongoDB")})
+objetobd.on('connected', ()=>{console.log('Conexión correcta a MongoDB')})
+objetobd.on('error', ()=>{console.log('Error en la conexión a MongoDB')})
 
-module.exports = mongoose;
+module.exports = mongoose

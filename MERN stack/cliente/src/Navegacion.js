@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Navegacion() {
     return (
-        <div classNameName='container-fluid'>
+        <div className=''>
             <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
                 <div className="container-fluid">
                     <a className="navbar-brand" href='/'>CRUD MERN</a>

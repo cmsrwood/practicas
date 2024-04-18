@@ -4,6 +4,11 @@ const archivoDB = require('./conexion')
 
 const rutausuario = require('./rutas/usuario')
 
+const bodyParser = require ('body-parser')
+
+app.use(bodyParser.json())
+app.use/bodyParser.urlencoded({extended:'true'})
+
 app.use('/api/usuario',rutausuario)
 
 app.get('/',(req,res)=>{
