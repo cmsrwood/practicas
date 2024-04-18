@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useNavigate } from 'react-router-dom'
 import uniquid from 'uniqid'
 import axios from 'axios'
 import Swal from 'sweetalert2'
@@ -9,7 +10,7 @@ function AgregarUsuario(){
     const[nombre, setNombre]=useState('')
     const[email, setEmail]=useState('')
     const[telefono, setTelefono]=useState('')
-    
+    let navegacion = useNavigate();
 
     function agregarUsuario(){
         var usuario = {
@@ -24,6 +25,7 @@ function AgregarUsuario(){
         .then(res => {
             //alert(res.data)
             Swal.fire('Felicidades', 'El usuario se creó con éxito')
+            navegacion('/');
         })
         .then(err => {console.log(err)})
     }
