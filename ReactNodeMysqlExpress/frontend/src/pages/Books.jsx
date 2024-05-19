@@ -18,22 +18,40 @@ export default function Books() {
     fetchAllBooks()
   }, [])
 
+  const handleDelete = async (id) => {
+    try{
+      await axios.delete(`http://localhost:8800/books/${id}`)
+      window.location.reload()
+    }catch(err){
+      console.log(err)
+    }
+  }
+
   return (
-    <div>
-      <h1>Books</h1>
-        <div className='books'>
+    <div className='container text-center '>
+      <h1 >Books</h1>
+      <Link to='/add'><button className='btn btn-success'><i className='bi'></i>Add New Book</button></Link>
+      <div className="row row-cols-1 row-cols-md-4 g-4">
           {books.map(book => (
-            <div className='book' key={book.id}>
-              {book.cover && <img src={book.cover} alt={book.title} />}
-              <h2>{book.title}</h2>
-              <p>{book.desc}</p>
-              <span>{book.price}</span>
-            </div>
+            <div class="card col mb-3" key={book.id} >
+            {book.cover && <img className='card-img-top' src={book.cover} alt={book.title} />}
+              <div class="card-body">
+                <h5 class="card-title">{book.title}</h5>
+                <p class="card-text">{book.desc}</p>
+                <span>{book.price}</span>
+                <div className="row">
+                  <Link className='btn btn-warning col' target='blank' to={`/update/${book.id}`}>Update</Link>
+                  <Link className='btn btn-danger col' onClick={()=>handleDelete(book.id)}>Delete</Link>
+                </div>
+              </div>
+              </div>
           ))}
-        </div>
-        <button>
-          <Link to="/add">Add new book</Link>
-        </button>
+      </div>
+      
+      
+
+
+      
     </div>
   )
 }

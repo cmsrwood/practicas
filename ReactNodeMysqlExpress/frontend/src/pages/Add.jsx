@@ -1,6 +1,8 @@
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import React, { useState } from 'react'
+import Swal from 'sweetalert2'
+
 
 export default function Add() {
 
@@ -22,6 +24,8 @@ const handleClick = async (e) =>{
   try{
     await axios.post("http://localhost:8800/books",book)
     navigate("/")
+    Swal.fire("Saved!", "", "success");
+
   }catch(err){
     console.log(err)
   }
