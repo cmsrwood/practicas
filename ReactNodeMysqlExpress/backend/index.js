@@ -66,7 +66,7 @@ app.get("/books/:id",(req,res)=>{
         }
         return res.send(data[0])
     })
-})  
+})
 
 app.put("/books/:id",(req,res)=>{
     const bookId = req.params.id
