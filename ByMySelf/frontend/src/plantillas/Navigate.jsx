@@ -34,7 +34,7 @@ export default function Navigate() {
                 <Link className='nav-link' to='/signin'>Sign in</Link>
               </li>
               <li class="nav-item">
-                <Link className='nav-link' to='/register'>Register</Link>
+                <Link className='nav-link' to='/signup'>Sign Up</Link>
               </li>
             </ul>
           <button className='btn justify-content-end' onClick={changeTheme}><i id="botont" className='bi bi-moon-fill'></i></button>

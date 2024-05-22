@@ -3,15 +3,16 @@ import Navigate from '../plantillas/Navigate'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import Swal from 'sweetalert2'
+import Validation from './SignupValidation'
 
-export default function Register() {
+export default function Signup(){
 
     //hooks
     const [user,setUser] = useState({
         email:"",
         password:""
     })
-
+    const [errors,setErrors] = useState({})
     const navigate = useNavigate()
 
     const handleChange = (e) =>{
@@ -21,9 +22,9 @@ export default function Register() {
       const handleClick = async (e) =>{
         e.preventDefault()
         try{
-            if (await axios.post("http://localhost:8800/register",user))
-              navigate("/")
-              Swal.fire("User created successfully!", "Now try to sign in!", "success");
+            if (await axios.post("http://localhost:8800/signup",user))
+            setErrors(Validation(user))
+            Swal.fire("User created successfully!", "Now try to sign in!", "success");
         }catch(err){
           console.log(err)
         }
@@ -33,7 +34,7 @@ export default function Register() {
     <div className=''>
         <Navigate/>
         <div className='p-5'>
-            <h1 className='text-center'>Register</h1>
+            <h1 className='text-center'>Sign up</h1>
             <form className='justify-content-center align-items-center px-5'>
                 <div className='mb-3 form-group'>
                     <label className='form-label'>Email</label>
@@ -48,7 +49,7 @@ export default function Register() {
                     <input className='form-control' onChange={handleChange} type="password" name='password' />
                 </div>
                 <div className='mb-3 form-group text-center'>
-                    <button className='btn btn-primary' onClick={handleClick}>Register</button>
+                    <button className='btn btn-primary' onClick={handleClick}>Sign up</button>
                 </div>
             </form>
         </div>

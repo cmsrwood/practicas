@@ -1,12 +1,10 @@
 import express from 'express'
 import cors from 'cors'
 import mysql from 'mysql'
-import joi from 'joi'
 
 const app = express()
 app.use(express.json())
 app.use(cors())
-const joi = joi
 
 
 // base de datos
@@ -26,7 +24,7 @@ app.get("/",(req,res)=>{
     res.json("Hello World from backend :D") 
 })
 
-app.post("/register",(req,res)=>{
+app.post("/signup",(req,res)=>{
 
     const email = req.body.email
     const password = req.body.password
@@ -44,6 +42,23 @@ app.post("/register",(req,res)=>{
                 }
                 res.send("User created successfully")
             })
+        }
+    })
+})
+
+app.post ("/signin",(req,res)=>{
+
+    const email = req.body.email
+    const password = req.body.password
+
+    db.query("SELECT * FROM users WHERE email = ? AND password = ?", [email, password], (err, result)=>{
+        if(err){
+            res.send(err)
+        }
+        if(result.length > 0){
+            res.send(result)
+        }else{
+            res.send("User not found")
         }
     })
 })
