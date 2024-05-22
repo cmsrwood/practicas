@@ -23,7 +23,7 @@ export default function Register() {
         try{
           await axios.post("http://localhost:8800/register",user)
           navigate("/")
-          Swal.fire("User created successfully!", "", "success");
+          Swal.fire("User created successfully!", "Now try to sign in!", "success");
       
         }catch(err){
           console.log(err)
@@ -38,11 +38,15 @@ export default function Register() {
             <form className='justify-content-center align-items-center px-5'>
                 <div className='mb-3 form-group'>
                     <label className='form-label'>Email</label>
-                    <input className='form-control' onChange={handleChange} type="text" name='email' />
+                    <input className='form-control' onChange={handleChange} type="email" name='email' />
                 </div>
                 <div className='mb-3 form-group'>
                     <label className='form-label'>Password</label>
-                    <input className='form-control' onChange={handleChange} type="text" name='password' />
+                    <input className='form-control' onChange={handleChange} type="password" name='password' />
+                </div>
+                <div className='mb-3 form-group'>
+                    <label className='form-label'>Confirm password</label>
+                    <input className='form-control' onChange={handleChange} type="password" name='password' />
                 </div>
                 <div className='mb-3 form-group text-center'>
                     <button className='btn btn-primary' onClick={handleClick}>Register</button>
