@@ -21,10 +21,9 @@ export default function Register() {
       const handleClick = async (e) =>{
         e.preventDefault()
         try{
-          await axios.post("http://localhost:8800/register",user)
-          navigate("/")
-          Swal.fire("User created successfully!", "Now try to sign in!", "success");
-      
+            if (await axios.post("http://localhost:8800/register",user))
+              navigate("/")
+              Swal.fire("User created successfully!", "Now try to sign in!", "success");
         }catch(err){
           console.log(err)
         }
@@ -38,11 +37,11 @@ export default function Register() {
             <form className='justify-content-center align-items-center px-5'>
                 <div className='mb-3 form-group'>
                     <label className='form-label'>Email</label>
-                    <input className='form-control' onChange={handleChange} type="email" name='email' />
+                    <input className='form-control' onChange={handleChange} type="email" name='email' required/>
                 </div>
                 <div className='mb-3 form-group'>
                     <label className='form-label'>Password</label>
-                    <input className='form-control' onChange={handleChange} type="password" name='password' />
+                    <input className='form-control' onChange={handleChange} type="password" name='password' required/>
                 </div>
                 <div className='mb-3 form-group'>
                     <label className='form-label'>Confirm password</label>
@@ -56,3 +55,5 @@ export default function Register() {
     </div>
   )
 }
+
+

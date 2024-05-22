@@ -1,10 +1,13 @@
 import express from 'express'
 import cors from 'cors'
 import mysql from 'mysql'
+import joi from 'joi'
 
 const app = express()
 app.use(express.json())
 app.use(cors())
+const joi = joi
+
 
 // base de datos
 const db = mysql.createConnection({
