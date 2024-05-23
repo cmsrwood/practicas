@@ -9,11 +9,11 @@ export default function Navigate() {
     var icon = document.getElementById('botont');
         if (index.getAttribute("data-bs-theme") === "light") {
           index.setAttribute("data-bs-theme", "dark");
-          icon.setAttribute("className","bi bi-moon-fill")
+          icon.setAttribute("class","bi bi-moon-fill")
         }
         else {
           index.setAttribute("data-bs-theme", "light");
-          icon.setAttribute("className","bi bi-sun-fill")
+          icon.setAttribute("class","bi bi-sun-fill")
         }
       }
 
