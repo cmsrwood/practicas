@@ -19,20 +19,24 @@ export default function Signup(){
         setUser(prev=>({...prev,[e.target.name]:e.target.value}))
       }
       
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-        const err = Validation(user);
-        setErrors(err);
-        if (err.email === "" && err.password === "") {
-          await axios.post("http://localhost:8800/signup", user)
-            .then((response) => {
-              console.log(response);
-            })
-            .catch((error) => {
-              console.log(error);
-            });
+      const handleSubmit = async (e) =>{
+        e.preventDefault()
+        try{
+            const err = Validation(user)
+            setErrors(err)
+            if (err.email === "" && err.password === ""){
+              axios.post("http://localhost:8800/signup",user)
+              .then(res => {
+                console.log(res)
+                navigate("/")
+              })
+              .catch (err => console.log(err))
+            }
+            Swal.fire("User created successfully!", "Welcome!", "success");
+        }catch(err){
+          console.log(err)
         }
-      };
+      }
 
   return (
     <div className=''>
@@ -49,6 +53,7 @@ export default function Signup(){
                     <label className='form-label'>Password</label>
                     <input className='form-control' onChange={handleChange} type="password" name='password' required/>
                     {errors.password && <span className='text-danger'> {errors.password}</span>}
+
                 </div>
                 <div className='mb-3 form-group text-center'>
                 <button type="submit" className='btn btn-primary'> Sign up </button>
