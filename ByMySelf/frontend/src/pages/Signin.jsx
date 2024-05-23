@@ -28,6 +28,7 @@ export default function Signin() {
               axios.post("http://localhost:8800/login",user)
               .then(res => {
                 if (res.data==="Success"){
+                    Swal.fire("You logged in successfully!", "Welcome!", "success");
                     navigate("/homeuser")
                 }
                 else{
@@ -36,7 +37,6 @@ export default function Signin() {
               })
               .catch (err => console.log(err))
             }
-            Swal.fire("You loged in successfully!", "Welcome!", "success");
         }catch(err){
           console.log(err)
         }

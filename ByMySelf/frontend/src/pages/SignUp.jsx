@@ -28,11 +28,11 @@ export default function Signup(){
               axios.post("http://localhost:8800/signup",user)
               .then(res => {
                 console.log(res)
+                Swal.fire("User created successfully!", "Welcome!", "success");
                 navigate("/")
               })
               .catch (err => console.log(err))
             }
-            Swal.fire("User created successfully!", "Welcome!", "success");
         }catch(err){
           console.log(err)
         }
