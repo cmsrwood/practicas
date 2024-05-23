@@ -29,23 +29,18 @@ app.post("/signup",(req,res)=>{
     const email = req.body.email
     const password = req.body.password
 
-    db.query("SELECT * FROM users WHERE email = ?", [email], (err, result)=>{
+    const sql = "INSERT INTO users (email, password) VALUES (?,?)"
+    const values = [
+        req.body.email,
+        req.body.password
+    ]
+    db. query(sql, values, (err, result)=>{
         if(err){
             res.send(err)
         }
-        if(result.length > 0){
-            res.send("User already exists")
-        }else{
-            db.query("INSERT INTO users (email, password) VALUES (?,?)", [email, password], (err, result)=>{
-                if(err){
-                    res.send(err)
-                }
-                res.send("User created successfully")
-            })
-        }
+        res.send("User created")
     })
 })
-
 app.post ("/signin",(req,res)=>{
 
     const email = req.body.email

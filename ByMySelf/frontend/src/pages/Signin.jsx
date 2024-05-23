@@ -19,13 +19,12 @@ export default function Signin() {
         setUser(prev=>({...prev,[e.target.name]:e.target.value}))
       }
       
-      const handleClick = async (e) =>{
+      const handleSubmit = async (e) =>{
         e.preventDefault()
         setErrors(Validation(user));
         try{
             if (await axios.post("http://localhost:8800/signin",user))
                 Swal.fire("User logged successfully!", "Welcome!", "success");
-                navigate("/homeuser")
         }catch(err){
           console.log(err)
         }
@@ -35,8 +34,8 @@ export default function Signin() {
     <div className=''>
         <Navigate/>
         <div className='p-5'>
-            <h1 className='text-center'>Signin</h1>
-            <form className='justify-content-center align-items-center px-5'>
+            <h1 className='text-center'>Sign in</h1>
+            <form className='justify-content-center align-items-center px-5' onSubmit={handleSubmit}>
                 <div className='mb-3 form-group'>
                     <label className='form-label'>Email</label>
                     <input className='form-control' onChange={handleChange} type="email" name='email' required/>
@@ -48,7 +47,7 @@ export default function Signin() {
                     {errors.password && <span className='text-danger'> {errors.password}</span>}
                 </div>
                 <div className='mb-3 form-group text-center'>
-                    <button className='btn btn-primary' onClick={handleClick}>Sign in</button>
+                <button type="submit" className='btn btn-primary'> Sign in </button>
                 </div>
             </form>
         </div>

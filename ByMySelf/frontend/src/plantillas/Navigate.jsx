@@ -9,31 +9,31 @@ export default function Navigate() {
     var icon = document.getElementById('botont');
         if (index.getAttribute("data-bs-theme") === "light") {
           index.setAttribute("data-bs-theme", "dark");
-          icon.setAttribute("class","bi bi-moon-fill")
+          icon.setAttribute("className","bi bi-moon-fill")
         }
         else {
           index.setAttribute("data-bs-theme", "light");
-          icon.setAttribute("class","bi bi-sun-fill")
+          icon.setAttribute("className","bi bi-sun-fill")
         }
       }
 
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
-        <div class="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary shadow">
+        <div className="container-fluid">
           <Link className='navbar-brand' to='/'>ByMySelf</Link>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
+          <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
                 <Link className='nav-link' to='/'>Home</Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className='nav-link' to='/signin'>Sign in</Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className='nav-link' to='/signup'>Sign Up</Link>
               </li>
             </ul>
