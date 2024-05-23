@@ -7,8 +7,8 @@ import Validation from './LoginValidation';
 
 export default function Signin() {
 
-    //hooks
-    const [user,setUser] = useState({
+     //hooks
+     const [user,setUser] = useState({
         email:"",
         password:""
     })
@@ -21,10 +21,22 @@ export default function Signin() {
       
       const handleSubmit = async (e) =>{
         e.preventDefault()
-        setErrors(Validation(user));
         try{
-            if (await axios.post("http://localhost:8800/signin",user))
-                Swal.fire("User logged successfully!", "Welcome!", "success");
+            const err = Validation(user)
+            setErrors(err)
+            if (err.email === "" && err.password === ""){
+              axios.post("http://localhost:8800/login",user)
+              .then(res => {
+                if (res.data==="Success"){
+                    navigate("/homeuser")
+                }
+                else{
+                  Swal.fire("Wrong email or password!", "Try again!", "error");
+                }
+              })
+              .catch (err => console.log(err))
+            }
+            Swal.fire("You loged in successfully!", "Welcome!", "success");
         }catch(err){
           console.log(err)
         }

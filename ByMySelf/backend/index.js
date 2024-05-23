@@ -46,19 +46,19 @@ app.post("/signup",(req,res)=>{
     })
 })
 
-app.post ("/signin",(req,res)=>{
+app.post ("/login",(req,res)=>{
 
     const email = req.body.email
     const password = req.body.password
 
-    db.query("SELECT * FROM users WHERE email = ? AND password = ?", [email, password], (err, result)=>{
+    db.query("SELECT * FROM users WHERE email = ? AND password = ?", [email, password], (err, data)=>{
         if(err){
-            res.send(err)
+            return res.json(err)
         }
-        if(result.length > 0){
-            res.send(result)
+        if(data.length > 0){
+            return res.json("Success")
         }else{
-            res.send("User not found")
+            return res.send("User not found")
         }
     })
 })
