@@ -36,8 +36,12 @@ const Chat = ({ socket, username, room }) => {
   return (
     <div className=''>
         <div className="card shadow">
-        <div className="card-header">
+        <div className="card-header  ">
+          <div className="d-flex justify-content-between">
             <h3>Live chat | Room: {room}</h3>
+            <h3>{username} (Tú)</h3>
+          </div>
+          <small>Conectados: {username} </small>
         </div>
         <ul className="list-group list-group-flush">
         <ScrollToBottom>

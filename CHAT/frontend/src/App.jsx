@@ -16,7 +16,7 @@ function App() {
     }
   }
   return (
-    <div className='chat container my-5 p-5'>
+    <div className='chat container p-5'>
       {!showChat?
         <div className="card shadow">
         <div className="card-header">
@@ -25,9 +25,9 @@ function App() {
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
             <label htmlFor="username" className='form-label' >Username:</label>
-            <input className='form-control my-2' placeholder='Username...' onChange={(e) => setUsername(e.target.value)} type="text"/>
+            <input className='form-control my-2' placeholder='Username...' onKeyDown={(e) => e.key === "Enter" && joinRoom()} onChange={(e) => setUsername(e.target.value)} type="text"/>
             <label htmlFor="room" className='form-label' >Sala:</label>
-            <input className='form-control my-2' placeholder='ID de la sala' onChange={(e) => setRoom(e.target.value)} type="text"/>
+            <input className='form-control my-2' placeholder='ID de la sala' onKeyDown={(e) => e.key === "Enter" && joinRoom()} onChange={(e) => setRoom(e.target.value)} type="text"/>
             <div className='text-center'>
               <button className=' text-center btn btn-primary my-2' onClick={joinRoom}>Unirse</button>
             </div>
