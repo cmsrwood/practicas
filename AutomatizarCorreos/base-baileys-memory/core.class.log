@@ -2,10 +2,10 @@
   key: {
     remoteJid: '573143826553@s.whatsapp.net',
     fromMe: false,
-    id: '7587C1D52F935B86675AF2DAF3DC05EF',
+    id: '1A05ADE0945C25BF160B69EEF7787F9E',
     participant: undefined
   },
-  messageTimestamp: 1717083441,
+  messageTimestamp: 1717085512,
   pushName: 'Díanis 💃',
   broadcast: false,
   message: Message {
@@ -19,9 +19,9 @@
   from: '573143826553'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  keyword: 'key_00d26a22-9248-467d-9a4b-edd3e6fe7e18',
-  answer: '🙌 Hola bienvenido a este *Chatbot*',
+  ref: 'ans_85818137-793d-4f81-bf6d-95cce49b1324',
+  keyword: 'key_f96aff6e-7310-4a81-876c-413ab404fb09',
+  answer: 'Bienvenido al chat bot de Dilan',
   options: {
     media: null,
     buttons: [],
@@ -34,150 +34,50 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '048bb392e3532d312fe1c2a3fbfc2126'
+  refSerialize: 'c6ecd0f87209962f32f3b29f57a349f9'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  keyword: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  answer: '¿Cual es tu email?',
+  ref: 'ans_e4c1faa7-d9b5-4907-9074-a70cd1378328',
+  keyword: 'ans_85818137-793d-4f81-bf6d-95cce49b1324',
+  answer: 'Escribe 2 para continuar con el flujo secundario',
   options: {
     media: null,
     buttons: [],
-    capture: true,
+    capture: false,
     child: null,
     delay: 0,
     idle: null,
     ref: null,
-    nested: [],
+    nested: [ [Object], [Object] ],
     keyword: {},
-    callback: true
+    callback: false
   },
-  refSerialize: 'af95fc4070835cf97312f0be2a5b54d3'
+  refSerialize: 'c95ce57ba3d39587093c543c2095ab0c'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573143826553@s.whatsapp.net',
     fromMe: false,
-    id: '88D33FB570991E6578D95C1FC86E7B9D',
+    id: 'AC4AB370C550E701CC82D069BE022FAA',
     participant: undefined
   },
-  messageTimestamp: 1717083449,
+  messageTimestamp: 1717085521,
   pushName: 'Díanis 💃',
   broadcast: false,
   message: Message {
-    conversation: 'Dilan',
+    conversation: '2',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Dilan',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: '9293887BC526C29B26195A991DD81081',
-    participant: undefined
-  },
-  messageTimestamp: 1717083451,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'S',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'S',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: '0179DA406754876F68EE589317C66BE8',
-    participant: undefined
-  },
-  messageTimestamp: 1717083452,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'S',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'S',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: 'FA428243FECC32EC3483A778EAB28D69',
-    participant: undefined
-  },
-  messageTimestamp: 1717083455,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'Jskdkskdkss',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Jskdkskdkss',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: 'B3FC48AA04173275FA68E873AB27CD07',
-    participant: undefined
-  },
-  messageTimestamp: 1717083458,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: '♤°♡••♡•♡',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '♤°♡••♡•♡',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: '6BDCD9942639E2163368EE22A40982F1',
-    participant: undefined
-  },
-  messageTimestamp: 1717083463,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'dilanfantas1101@gmail.com',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'dilanfantas1101@gmail.com',
+  body: '2',
   from: '573143826553'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_597a89be-34d3-4748-9304-89da364e4e4c',
-  keyword: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  answer: 'Gracias por tu correo',
+  ref: 'ans_5f2ea6fd-9cfc-469c-81d6-cb86e66bec35',
+  keyword: 'key_92082826-5352-4068-afec-ace2229979fc',
+  answer: 'Aquí tenemos el flujo secundario',
   options: {
     media: null,
     buttons: [],
@@ -190,16 +90,16 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '87a2ef1112591c29e13c09ecdd25f3e0'
+  refSerialize: 'a6cc4773fe0d34b3f8b79968fb9be97b'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573173242675@s.whatsapp.net',
     fromMe: false,
-    id: '112A4DCDBCE08D23156C8E1EC5B74534',
+    id: '71D818F1822EBC282FD9CB3A74E59E9E',
     participant: undefined
   },
-  messageTimestamp: 1717083477,
+  messageTimestamp: 1717085535,
   pushName: 'Camilo Rodriguez :D',
   broadcast: false,
   message: Message {
@@ -213,9 +113,9 @@
   from: '573173242675'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  keyword: 'key_00d26a22-9248-467d-9a4b-edd3e6fe7e18',
-  answer: '🙌 Hola bienvenido a este *Chatbot*',
+  ref: 'ans_85818137-793d-4f81-bf6d-95cce49b1324',
+  keyword: 'key_f96aff6e-7310-4a81-876c-413ab404fb09',
+  answer: 'Bienvenido al chat bot de Dilan',
   options: {
     media: null,
     buttons: [],
@@ -228,50 +128,51 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '048bb392e3532d312fe1c2a3fbfc2126'
+  refSerialize: 'c6ecd0f87209962f32f3b29f57a349f9'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  keyword: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  answer: '¿Cual es tu email?',
+  ref: 'ans_e4c1faa7-d9b5-4907-9074-a70cd1378328',
+  keyword: 'ans_85818137-793d-4f81-bf6d-95cce49b1324',
+  answer: 'Escribe 2 para continuar con el flujo secundario',
   options: {
     media: null,
     buttons: [],
-    capture: true,
+    capture: false,
     child: null,
     delay: 0,
     idle: null,
     ref: null,
-    nested: [],
+    nested: [ [Object], [Object] ],
     keyword: {},
-    callback: true
+    callback: false
   },
-  refSerialize: 'af95fc4070835cf97312f0be2a5b54d3'
+  refSerialize: 'c95ce57ba3d39587093c543c2095ab0c'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573173242675@s.whatsapp.net',
     fromMe: false,
-    id: '0296F1DC8EA7BD5F6797BBCD34B7C2DF',
+    id: '7616C113C3E1DBA7893415F6CA21EB36',
     participant: undefined
   },
-  messageTimestamp: 1717083505,
+  messageTimestamp: 1717085544,
   pushName: 'Camilo Rodriguez :D',
   broadcast: false,
   message: Message {
-    conversation: 'andres.romerp1473@gmail.com',
+    conversation: '2',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'andres.romerp1473@gmail.com',
+  status: 4,
+  body: '2',
   from: '573173242675'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_597a89be-34d3-4748-9304-89da364e4e4c',
-  keyword: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  answer: 'Gracias por tu correo',
+  ref: 'ans_5f2ea6fd-9cfc-469c-81d6-cb86e66bec35',
+  keyword: 'key_92082826-5352-4068-afec-ace2229979fc',
+  answer: 'Aquí tenemos el flujo secundario',
   options: {
     media: null,
     buttons: [],
@@ -284,1112 +185,65 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '87a2ef1112591c29e13c09ecdd25f3e0'
+  refSerialize: 'a6cc4773fe0d34b3f8b79968fb9be97b'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573173242675@s.whatsapp.net',
     fromMe: false,
-    id: '2FD78DA9E88655DBDE8FA1B6DC0D9789',
+    id: 'DA3E569D1F39ECA6B5F5E2033546021D',
     participant: undefined
   },
-  messageTimestamp: 1717083511,
+  messageTimestamp: 1717085552,
   pushName: 'Camilo Rodriguez :D',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'A',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
+    conversation: 'Waos',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'A',
+  body: 'Waos',
   from: '573173242675'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573173242675@s.whatsapp.net',
     fromMe: false,
-    id: '41FD14A24CB7501486A9EDB35AF508D1',
+    id: 'CF2D84C7DE7AF8A2D94D22BFF545D944',
     participant: undefined
   },
-  messageTimestamp: 1717083512,
+  messageTimestamp: 1717085558,
   pushName: 'Camilo Rodriguez :D',
   broadcast: false,
   message: Message {
-    conversation: 'xD',
+    conversation: 'Kakskakdkd',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'xD',
+  body: 'Kakskakdkd',
   from: '573173242675'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573173242675@s.whatsapp.net',
     fromMe: false,
-    id: '34472FA43D7043747841DC37195ED679',
+    id: '59AB18DD80CA095601E254FA541AE1B9',
     participant: undefined
   },
-  messageTimestamp: 1717083529,
+  messageTimestamp: 1717085561,
   pushName: 'Camilo Rodriguez :D',
   broadcast: false,
   message: Message {
-    conversation: 'Osea lo pongo sin el arroba',
+    conversation: 'Y como?',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Osea lo pongo sin el arroba',
+  body: 'Y como?',
   from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '02ABC40CA6EA45FE3806CD9ECC67C5C7',
-    participant: undefined
-  },
-  messageTimestamp: 1717083533,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Solo lo inicial',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  status: 4,
-  body: 'Solo lo inicial',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '52C87F56EB058719B8B97CBF16E851DF',
-    participant: undefined
-  },
-  messageTimestamp: 1717083537,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'I también el dominio',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'I también el dominio',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: '2A4E56BC02ADBA727B3E015F8029F502',
-    participant: undefined
-  },
-  messageTimestamp: 1717083558,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'Hola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Hola',
-  from: '573143826553'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  keyword: 'key_00d26a22-9248-467d-9a4b-edd3e6fe7e18',
-  answer: '🙌 Hola bienvenido a este *Chatbot*',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '048bb392e3532d312fe1c2a3fbfc2126'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  keyword: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  answer: '¿Cual es tu email?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'af95fc4070835cf97312f0be2a5b54d3'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: 'CFDD85FA2824179D5F26EAF291656935',
-    participant: undefined
-  },
-  messageTimestamp: 1717083565,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'cualquier cosa sin arroba',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'cualquier cosa sin arroba',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: 'DFFD44DF9C5F3FE14289445C3DE3FF99',
-    participant: undefined
-  },
-  messageTimestamp: 1717083566,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Bv',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Bv',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: 'D22593AFFB3B3F00B09BE4344BB04025',
-    participant: undefined
-  },
-  messageTimestamp: 1717083566,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'No se',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'No se',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: '59E4734A7E2E7F3835250A283F066A58',
-    participant: undefined
-  },
-  messageTimestamp: 1717083568,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'Espera',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Espera',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: '59EB264AA5CDC37CA9A2296BEFBE7116',
-    participant: undefined
-  },
-  messageTimestamp: 1717083569,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'Espera',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Espera',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '927B48191B99E9291EF94343D4B46C24',
-    participant: undefined
-  },
-  messageTimestamp: 1717083570,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Kskdsks',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Kskdsks',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: 'C469DFEFAE61490076665A4CAD563C8F',
-    participant: undefined
-  },
-  messageTimestamp: 1717083570,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'Espera',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Espera',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573133958194@s.whatsapp.net',
-    fromMe: false,
-    id: '75988585ECC17651487F064A3CE0250C',
-    participant: undefined
-  },
-  messageTimestamp: 1717083571,
-  pushName: 'Mariane 💕',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'OKSKSKDJDJ',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'OKSKSKDJDJ',
-  from: '573133958194'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: 'E7B2E948338418C8E2A92CA6722B7BB7',
-    participant: undefined
-  },
-  messageTimestamp: 1717083571,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'Espera',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Espera',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573133958194@s.whatsapp.net',
-    fromMe: false,
-    id: '70ED6923BD794285A14325133D123B9C',
-    participant: undefined
-  },
-  messageTimestamp: 1717083572,
-  pushName: 'Mariane 💕',
-  broadcast: false,
-  message: Message {
-    conversation: 'Hola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Hola',
-  from: '573133958194'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '5888FAABAEB50F631D09AFB8B2D8C86B',
-    participant: undefined
-  },
-  messageTimestamp: 1717083573,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'No mentiras',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  status: 4,
-  body: 'No mentiras',
-  from: '573173242675'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  keyword: 'key_00d26a22-9248-467d-9a4b-edd3e6fe7e18',
-  answer: '🙌 Hola bienvenido a este *Chatbot*',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '048bb392e3532d312fe1c2a3fbfc2126'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '973AF7FCBD9B0E5499C247A9458C2ECC',
-    participant: undefined
-  },
-  messageTimestamp: 1717083574,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Hola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  status: 4,
-  body: 'Hola',
-  from: '573173242675'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  keyword: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  answer: '¿Cual es tu email?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'af95fc4070835cf97312f0be2a5b54d3'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  keyword: 'key_00d26a22-9248-467d-9a4b-edd3e6fe7e18',
-  answer: '🙌 Hola bienvenido a este *Chatbot*',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '048bb392e3532d312fe1c2a3fbfc2126'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  keyword: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  answer: '¿Cual es tu email?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'af95fc4070835cf97312f0be2a5b54d3'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573133958194@s.whatsapp.net',
-    fromMe: false,
-    id: '10558CAC24138C6AC29E747FF0686661',
-    participant: undefined
-  },
-  messageTimestamp: 1717083580,
-  pushName: 'Mariane 💕',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Sisisi',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Sisisi',
-  from: '573133958194'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '4C3171364FA59B8D2F944E17A5F73988',
-    participant: undefined
-  },
-  messageTimestamp: 1717083583,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Cazapvtas42',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  status: 4,
-  body: 'Cazapvtas42',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573133958194@s.whatsapp.net',
-    fromMe: false,
-    id: 'A69D8F33976008460C1826DF536F1DB9',
-    participant: undefined
-  },
-  messageTimestamp: 1717083587,
-  pushName: 'Mariane 💕',
-  broadcast: false,
-  message: Message {
-    stickerMessage: StickerMessage {
-      url: 'https://mmg.whatsapp.net/v/t62.15575-24/23420682_1201851810973910_6578525089718921781_n.enc?ccb=11-4&oh=01_Q5AaIN9aXRlGClqm8z0xHIlLcocEaCC-8yO51s3DZvwB_IZy&oe=667FF34C&_nc_sid=5e03e0&mms3=true',
-      fileSha256: [Uint8Array],
-      fileEncSha256: [Uint8Array],
-      mediaKey: [Uint8Array],
-      mimetype: 'image/webp',
-      height: 512,
-      width: 512,
-      directPath: '/v/t62.15575-24/23420682_1201851810973910_6578525089718921781_n.enc?ccb=11-4&oh=01_Q5AaIN9aXRlGClqm8z0xHIlLcocEaCC-8yO51s3DZvwB_IZy&oe=667FF34C&_nc_sid=5e03e0',
-      fileLength: [Long],
-      mediaKeyTimestamp: [Long],
-      isAnimated: false,
-      contextInfo: [ContextInfo],
-      stickerSentTs: [Long],
-      isAvatar: false
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '_event_media__83d163e0-8aab-4220-bf43-df1eb9a922da',
-  from: '573133958194'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: '485A755941FA8FFB94BC2FA4A1C16273',
-    participant: undefined
-  },
-  messageTimestamp: 1717083595,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'Ola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Ola',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: 'DBFF34F78473113C7788204230572AA6',
-    participant: undefined
-  },
-  messageTimestamp: 1717083597,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'Ola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Ola',
-  from: '573143826553'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573143826553@s.whatsapp.net',
-    fromMe: false,
-    id: '3230A111D076DC6B46D7B31CD6336D68',
-    participant: undefined
-  },
-  messageTimestamp: 1717083600,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: 'dilanfantas1101@gmail.com',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'dilanfantas1101@gmail.com',
-  from: '573143826553'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_597a89be-34d3-4748-9304-89da364e4e4c',
-  keyword: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  answer: 'Gracias por tu correo',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '87a2ef1112591c29e13c09ecdd25f3e0'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: 'AA1945635B4976A3C2C1CC836EA894EB',
-    participant: undefined
-  },
-  messageTimestamp: 1717083607,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Cazapvtas42.gmail.com',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  status: 4,
-  body: 'Cazapvtas42.gmail.com',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '932D5FF79814CFD58C29E68750C082FF',
-    participant: undefined
-  },
-  messageTimestamp: 1717083614,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Ay',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  status: 4,
-  body: 'Ay',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: 'A75D92B89587FB6DC7ED38A2ACF9B563',
-    participant: undefined
-  },
-  messageTimestamp: 1717083627,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Dios?',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  status: 4,
-  body: 'Dios?',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '2E81D3D232631541A8EB8791359CE9A6',
-    participant: undefined
-  },
-  messageTimestamp: 1717083637,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Skdkskdkd',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Skdkskdkd',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: 'E33EFC407206CC67E90855AA8937B555',
-    participant: undefined
-  },
-  messageTimestamp: 1717083640,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Skkdskskd',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Skkdskskd',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '185CE6AC52341F36C6EC2419C1A56A47',
-    participant: undefined
-  },
-  messageTimestamp: 1717083641,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Aaaaa',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Aaaaa',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: 'B02C5F4B0D4A2F1B5AC55001E92D3911',
-    participant: undefined
-  },
-  messageTimestamp: 1717083642,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Skdkskdkd',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Skdkskdkd',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: 'BBCA0AB96670AE2252F868500C97DB36',
-    participant: undefined
-  },
-  messageTimestamp: 1717083644,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Dkfkdkd',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Dkfkdkd',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: 'F99B19204B2B53980CD92CD81513FF63',
-    participant: undefined
-  },
-  messageTimestamp: 1717083647,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Q miedo xD',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Q miedo xD',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '6BDA496384314850E787F04DCB234E83',
-    participant: undefined
-  },
-  messageTimestamp: 1717083663,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'andres.romerp1473@gmail.com',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'andres.romerp1473@gmail.com',
-  from: '573173242675'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_597a89be-34d3-4748-9304-89da364e4e4c',
-  keyword: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  answer: 'Gracias por tu correo',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '87a2ef1112591c29e13c09ecdd25f3e0'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: 'F05B200A8242D34639C8BBA610062E5D',
-    participant: undefined
-  },
-  messageTimestamp: 1717083673,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'No sé puede limitar eso de los intentos',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'No sé puede limitar eso de los intentos',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '4A45C862340457AB3ABF65D58C32C07E',
-    participant: undefined
-  },
-  messageTimestamp: 1717083691,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Y ponerle un, lo siento no parece un correo valido o alguna monda',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Y ponerle un, lo siento no parece un correo valido o alguna monda',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573012830337@s.whatsapp.net',
-    fromMe: false,
-    id: '55978B83D39495C65FDD1C1CB8E8345E',
-    participant: undefined
-  },
-  messageTimestamp: 1717083699,
-  pushName: 'Vivis',
-  broadcast: false,
-  message: Message {
-    conversation: 'Hola papi',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Hola papi',
-  from: '573012830337'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '372ACFB59C922D40DF713B1A38E5C990',
-    participant: undefined
-  },
-  messageTimestamp: 1717083700,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Pq da miedo q le pida y le pida el correo asi',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Pq da miedo q le pida y le pida el correo asi',
-  from: '573173242675'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  keyword: 'key_00d26a22-9248-467d-9a4b-edd3e6fe7e18',
-  answer: '🙌 Hola bienvenido a este *Chatbot*',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '048bb392e3532d312fe1c2a3fbfc2126'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  keyword: 'ans_2ff43112-d7fb-4bc1-94ba-6ea98b26434f',
-  answer: '¿Cual es tu email?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'af95fc4070835cf97312f0be2a5b54d3'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: 'F8457720749558115E38C2833ED02F72',
-    participant: undefined
-  },
-  messageTimestamp: 1717083704,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Ajá aja',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  status: 4,
-  body: 'Ajá aja',
-  from: '573173242675'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573012830337@s.whatsapp.net',
-    fromMe: false,
-    id: '28FB867B8D073FC4210D0FD01440CEDD',
-    participant: undefined
-  },
-  messageTimestamp: 1717083745,
-  pushName: 'Vivis',
-  broadcast: false,
-  message: Message {
-    conversation: 'Un fa... Tu que hiciste el ICFES ahorita.. Tienes algún número para comunicar',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Un fa... Tu que hiciste el ICFES ahorita.. Tienes algún número para comunicar',
-  from: '573012830337'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573133958194@s.whatsapp.net',
-    fromMe: false,
-    id: 'E47D5D3CC5735FE3AC70B5DE9B4857BA',
-    participant: undefined
-  },
-  messageTimestamp: 1717083745,
-  pushName: 'Mariane 💕',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'ilikeu@gmail.com',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'ilikeu@gmail.com',
-  from: '573133958194'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_597a89be-34d3-4748-9304-89da364e4e4c',
-  keyword: 'ans_42d0ffab-71c2-4024-be49-891d64e9deaa',
-  answer: 'Gracias por tu correo',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '87a2ef1112591c29e13c09ecdd25f3e0'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573012830337@s.whatsapp.net',
-    fromMe: false,
-    id: '85702039715985A673D3D362CD835D2A',
-    participant: undefined
-  },
-  messageTimestamp: 1717083767,
-  pushName: 'Vivis',
-  broadcast: false,
-  message: Message {
-    conversation: 'Eso veo jajaja',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  status: 4,
-  body: 'Eso veo jajaja',
-  from: '573012830337'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573012830337@s.whatsapp.net',
-    fromMe: false,
-    id: '657A1BE69DFC54B42FC327521FDA750D',
-    participant: undefined
-  },
-  messageTimestamp: 1717083815,
-  pushName: 'Vivis',
-  broadcast: false,
-  message: Message {
-    conversation: 'En el resultado no dice información',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'En el resultado no dice información',
-  from: '573012830337'
 }
