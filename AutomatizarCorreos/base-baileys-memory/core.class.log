@@ -1,26 +1,26 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '573143826553@s.whatsapp.net',
+    remoteJid: '573182626850@s.whatsapp.net',
     fromMe: false,
-    id: '1A05ADE0945C25BF160B69EEF7787F9E',
+    id: 'B2EBF7BC2008A0FECDDA3B0A3A3D08B9',
     participant: undefined
   },
-  messageTimestamp: 1717085512,
-  pushName: 'Díanis 💃',
+  messageTimestamp: 1717087627,
+  pushName: 'Abjura',
   broadcast: false,
   message: Message {
-    conversation: 'Hola',
+    conversation: 'Ola',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Hola',
-  from: '573143826553'
+  body: 'Ola',
+  from: '573182626850'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_85818137-793d-4f81-bf6d-95cce49b1324',
-  keyword: 'key_f96aff6e-7310-4a81-876c-413ab404fb09',
+  ref: 'ans_6b57534c-8421-4c0c-86db-4ec8adf869e3',
+  keyword: 'key_91986de0-3d14-40fd-8fd2-8ca35a7b0ab5',
   answer: 'Bienvenido al chat bot de Dilan',
   options: {
     media: null,
@@ -34,11 +34,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'c6ecd0f87209962f32f3b29f57a349f9'
+  refSerialize: 'cd1b8face503910814cf687e20fce09c'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_e4c1faa7-d9b5-4907-9074-a70cd1378328',
-  keyword: 'ans_85818137-793d-4f81-bf6d-95cce49b1324',
+  ref: 'ans_2695a557-adfd-464c-8938-4980c8e5d427',
+  keyword: 'ans_6b57534c-8421-4c0c-86db-4ec8adf869e3',
   answer: 'Escribe 2 para continuar con el flujo secundario',
   options: {
     media: null,
@@ -52,111 +52,17 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'c95ce57ba3d39587093c543c2095ab0c'
+  refSerialize: 'd27b12e9368a0750bb6abb0cfb281f7d'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573143826553@s.whatsapp.net',
+    remoteJid: '573182626850@s.whatsapp.net',
     fromMe: false,
-    id: 'AC4AB370C550E701CC82D069BE022FAA',
+    id: 'F962F909E86880918148924F85CDFA49',
     participant: undefined
   },
-  messageTimestamp: 1717085521,
-  pushName: 'Díanis 💃',
-  broadcast: false,
-  message: Message {
-    conversation: '2',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '2',
-  from: '573143826553'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_5f2ea6fd-9cfc-469c-81d6-cb86e66bec35',
-  keyword: 'key_92082826-5352-4068-afec-ace2229979fc',
-  answer: 'Aquí tenemos el flujo secundario',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'a6cc4773fe0d34b3f8b79968fb9be97b'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '71D818F1822EBC282FD9CB3A74E59E9E',
-    participant: undefined
-  },
-  messageTimestamp: 1717085535,
-  pushName: 'Camilo Rodriguez :D',
-  broadcast: false,
-  message: Message {
-    conversation: 'Hola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Hola',
-  from: '573173242675'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_85818137-793d-4f81-bf6d-95cce49b1324',
-  keyword: 'key_f96aff6e-7310-4a81-876c-413ab404fb09',
-  answer: 'Bienvenido al chat bot de Dilan',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'c6ecd0f87209962f32f3b29f57a349f9'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_e4c1faa7-d9b5-4907-9074-a70cd1378328',
-  keyword: 'ans_85818137-793d-4f81-bf6d-95cce49b1324',
-  answer: 'Escribe 2 para continuar con el flujo secundario',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [ [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'c95ce57ba3d39587093c543c2095ab0c'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573173242675@s.whatsapp.net',
-    fromMe: false,
-    id: '7616C113C3E1DBA7893415F6CA21EB36',
-    participant: undefined
-  },
-  messageTimestamp: 1717085544,
-  pushName: 'Camilo Rodriguez :D',
+  messageTimestamp: 1717087634,
+  pushName: 'Abjura',
   broadcast: false,
   message: Message {
     conversation: '2',
@@ -167,11 +73,11 @@
   },
   status: 4,
   body: '2',
-  from: '573173242675'
+  from: '573182626850'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_5f2ea6fd-9cfc-469c-81d6-cb86e66bec35',
-  keyword: 'key_92082826-5352-4068-afec-ace2229979fc',
+  ref: 'ans_d498a85f-b7ad-4c91-a6ec-235efa30ab03',
+  keyword: 'key_8e6bdf8a-ac98-4cb8-b08c-bab5f4b32d2d',
   answer: 'Aquí tenemos el flujo secundario',
   options: {
     media: null,
@@ -185,16 +91,261 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'a6cc4773fe0d34b3f8b79968fb9be97b'
+  refSerialize: 'c2e55dab3fb84a57794b140db5820cb0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573182626850@s.whatsapp.net',
+    fromMe: false,
+    id: 'FE49869E7FB0115E7555DBEEA73961A4',
+    participant: undefined
+  },
+  messageTimestamp: 1717087642,
+  pushName: 'Abjura',
+  broadcast: false,
+  message: Message {
+    conversation: 'Dick',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  status: 4,
+  body: 'Dick',
+  from: '573182626850'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573182626850@s.whatsapp.net',
+    fromMe: false,
+    id: '92D3DDDF3A7CD6022EDE3B707B0CBC8F',
+    participant: undefined
+  },
+  messageTimestamp: 1717087657,
+  pushName: 'Abjura',
+  broadcast: false,
+  message: Message {
+    conversation: 'Ola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Ola',
+  from: '573182626850'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_6b57534c-8421-4c0c-86db-4ec8adf869e3',
+  keyword: 'key_91986de0-3d14-40fd-8fd2-8ca35a7b0ab5',
+  answer: 'Bienvenido al chat bot de Dilan',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'cd1b8face503910814cf687e20fce09c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2695a557-adfd-464c-8938-4980c8e5d427',
+  keyword: 'ans_6b57534c-8421-4c0c-86db-4ec8adf869e3',
+  answer: 'Escribe 2 para continuar con el flujo secundario',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'd27b12e9368a0750bb6abb0cfb281f7d'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573182626850@s.whatsapp.net',
+    fromMe: false,
+    id: 'EFC472AA8827205537B9973E51C8F21A',
+    participant: undefined
+  },
+  messageTimestamp: 1717087659,
+  pushName: 'Abjura',
+  broadcast: false,
+  message: Message {
+    conversation: 'Adio',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Adio',
+  from: '573182626850'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573182626850@s.whatsapp.net',
+    fromMe: false,
+    id: '3C800F3A9F9A81BB946FBFECE19366FB',
+    participant: undefined
+  },
+  messageTimestamp: 1717087667,
+  pushName: 'Abjura',
+  broadcast: false,
+  message: Message {
+    stickerMessage: StickerMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.15575-24/40996410_398183203213350_6189967092134730336_n.enc?ccb=11-4&oh=01_Q5AaIPhiL5FmBRDq2liRUYIUtYrAIIVeZQs_7Nu-v0iKyONN&oe=66800E30&_nc_sid=5e03e0&mms3=true',
+      fileSha256: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      mediaKey: [Uint8Array],
+      mimetype: 'image/webp',
+      height: 64,
+      width: 64,
+      directPath: '/v/t62.15575-24/40996410_398183203213350_6189967092134730336_n.enc?ccb=11-4&oh=01_Q5AaIPhiL5FmBRDq2liRUYIUtYrAIIVeZQs_7Nu-v0iKyONN&oe=66800E30&_nc_sid=5e03e0',
+      fileLength: [Long],
+      mediaKeyTimestamp: [Long],
+      isAnimated: false,
+      stickerSentTs: [Long],
+      isAvatar: false
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '_event_media__71cf8a41-039b-4aef-a43e-305681ef5545',
+  from: '573182626850'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573182626850@s.whatsapp.net',
+    fromMe: false,
+    id: 'B9321D4CB9474769CB30C3572FDBA747',
+    participant: undefined
+  },
+  messageTimestamp: 1717087683,
+  pushName: 'Abjura',
+  broadcast: false,
+  message: Message {
+    conversation: 'Programador',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Programador',
+  from: '573182626850'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573173242675@s.whatsapp.net',
     fromMe: false,
-    id: 'DA3E569D1F39ECA6B5F5E2033546021D',
+    id: 'DDC6456F6F7EC5DFEFDB386CB7B8BD5F',
     participant: undefined
   },
-  messageTimestamp: 1717085552,
+  messageTimestamp: 1717088473,
+  pushName: 'Camilo Rodriguez :D',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '573173242675'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_6b57534c-8421-4c0c-86db-4ec8adf869e3',
+  keyword: 'key_91986de0-3d14-40fd-8fd2-8ca35a7b0ab5',
+  answer: 'Bienvenido al chat bot de Dilan',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'cd1b8face503910814cf687e20fce09c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2695a557-adfd-464c-8938-4980c8e5d427',
+  keyword: 'ans_6b57534c-8421-4c0c-86db-4ec8adf869e3',
+  answer: 'Escribe 2 para continuar con el flujo secundario',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'd27b12e9368a0750bb6abb0cfb281f7d'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573173242675@s.whatsapp.net',
+    fromMe: false,
+    id: '19843BF762463D2BF462CE53DFA1CF54',
+    participant: undefined
+  },
+  messageTimestamp: 1717088477,
+  pushName: 'Camilo Rodriguez :D',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2',
+  from: '573173242675'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d498a85f-b7ad-4c91-a6ec-235efa30ab03',
+  keyword: 'key_8e6bdf8a-ac98-4cb8-b08c-bab5f4b32d2d',
+  answer: 'Aquí tenemos el flujo secundario',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'c2e55dab3fb84a57794b140db5820cb0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573173242675@s.whatsapp.net',
+    fromMe: false,
+    id: '68D396227EFA588BACEF3ECE03E7F88E',
+    participant: undefined
+  },
+  messageTimestamp: 1717088481,
   pushName: 'Camilo Rodriguez :D',
   broadcast: false,
   message: Message {
@@ -211,39 +362,251 @@
   key: {
     remoteJid: '573173242675@s.whatsapp.net',
     fromMe: false,
-    id: 'CF2D84C7DE7AF8A2D94D22BFF545D944',
+    id: '3C74A276F7233B098A5D9561A6F1EC62',
     participant: undefined
   },
-  messageTimestamp: 1717085558,
+  messageTimestamp: 1717088589,
   pushName: 'Camilo Rodriguez :D',
   broadcast: false,
   message: Message {
-    conversation: 'Kakskakdkd',
+    conversation: 'Aaaaa ok',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Kakskakdkd',
+  body: 'Aaaaa ok',
   from: '573173242675'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573173242675@s.whatsapp.net',
     fromMe: false,
-    id: '59AB18DD80CA095601E254FA541AE1B9',
+    id: 'A0346A81253863AA5155243A60AEE721',
     participant: undefined
   },
-  messageTimestamp: 1717085561,
+  messageTimestamp: 1717088595,
   pushName: 'Camilo Rodriguez :D',
   broadcast: false,
   message: Message {
-    conversation: 'Y como?',
+    conversation: 'Ola',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Y como?',
+  body: 'Ola',
   from: '573173242675'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_6b57534c-8421-4c0c-86db-4ec8adf869e3',
+  keyword: 'key_91986de0-3d14-40fd-8fd2-8ca35a7b0ab5',
+  answer: 'Bienvenido al chat bot de Dilan',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'cd1b8face503910814cf687e20fce09c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2695a557-adfd-464c-8938-4980c8e5d427',
+  keyword: 'ans_6b57534c-8421-4c0c-86db-4ec8adf869e3',
+  answer: 'Escribe 2 para continuar con el flujo secundario',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'd27b12e9368a0750bb6abb0cfb281f7d'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573173242675@s.whatsapp.net',
+    fromMe: false,
+    id: '1F941D217A15FB2EDA722D3193D612D3',
+    participant: undefined
+  },
+  messageTimestamp: 1717088598,
+  pushName: 'Camilo Rodriguez :D',
+  broadcast: false,
+  message: Message {
+    conversation: 'Ala',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Ala',
+  from: '573173242675'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573173242675@s.whatsapp.net',
+    fromMe: false,
+    id: 'A85DB5764B8D4C858BDAF4DF15395090',
+    participant: undefined
+  },
+  messageTimestamp: 1717088603,
+  pushName: 'Camilo Rodriguez :D',
+  broadcast: false,
+  message: Message {
+    conversation: 'También funciona asi',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'También funciona asi',
+  from: '573173242675'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573173242675@s.whatsapp.net',
+    fromMe: false,
+    id: '228BA472505A83683F46F668762E67DE',
+    participant: undefined
+  },
+  messageTimestamp: 1717088607,
+  pushName: 'Camilo Rodriguez :D',
+  broadcast: false,
+  message: Message {
+    conversation: 'Eh....',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Eh....',
+  from: '573173242675'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573173242675@s.whatsapp.net',
+    fromMe: false,
+    id: '472C70BFDCE49CD9C9B3C2B593EEC412',
+    participant: undefined
+  },
+  messageTimestamp: 1717088609,
+  pushName: 'Camilo Rodriguez :D',
+  broadcast: false,
+  message: Message {
+    conversation: 'Holi',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Holi',
+  from: '573173242675'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573173242675@s.whatsapp.net',
+    fromMe: false,
+    id: '2C709D1B0482463E45011896EA855137',
+    participant: undefined
+  },
+  messageTimestamp: 1717088614,
+  pushName: 'Camilo Rodriguez :D',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hoda',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hoda',
+  from: '573173242675'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573173242675@s.whatsapp.net',
+    fromMe: false,
+    id: 'AB323319C0B29C08686A58D3AEAA8E96',
+    participant: undefined
+  },
+  messageTimestamp: 1717088618,
+  pushName: 'Camilo Rodriguez :D',
+  broadcast: false,
+  message: Message {
+    conversation: 'Oda',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Oda',
+  from: '573173242675'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573173242675@s.whatsapp.net',
+    fromMe: false,
+    id: 'EF08C49FB0EF4FFBA495477871F1B035',
+    participant: undefined
+  },
+  messageTimestamp: 1717088624,
+  pushName: 'Camilo Rodriguez :D',
+  broadcast: false,
+  message: Message {
+    conversation: 'Olaxd',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Olaxd',
+  from: '573173242675'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_6b57534c-8421-4c0c-86db-4ec8adf869e3',
+  keyword: 'key_91986de0-3d14-40fd-8fd2-8ca35a7b0ab5',
+  answer: 'Bienvenido al chat bot de Dilan',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'cd1b8face503910814cf687e20fce09c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2695a557-adfd-464c-8938-4980c8e5d427',
+  keyword: 'ans_6b57534c-8421-4c0c-86db-4ec8adf869e3',
+  answer: 'Escribe 2 para continuar con el flujo secundario',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'd27b12e9368a0750bb6abb0cfb281f7d'
 }

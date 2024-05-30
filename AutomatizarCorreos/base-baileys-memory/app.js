@@ -6,7 +6,7 @@ const MockAdapter = require('@bot-whatsapp/database/mock')
 
 const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['Aquí tenemos el flujo secundario'])
 
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
+const flowPrincipal = addKeyword(['hola', 'ole', 'alo' , 'ola'])
     .addAnswer('Bienvenido al chat bot de Dilan')
     .addAnswer(
         [
