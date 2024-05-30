@@ -25,7 +25,7 @@ function App() {
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
             <label htmlFor="username" className='form-label' >Username:</label>
-            <input className='form-control my-2' placeholder='Mariana...' onChange={(e) => setUsername(e.target.value)} type="text"/>
+            <input className='form-control my-2' placeholder='Username...' onChange={(e) => setUsername(e.target.value)} type="text"/>
             <label htmlFor="room" className='form-label' >Sala:</label>
             <input className='form-control my-2' placeholder='ID de la sala' onChange={(e) => setRoom(e.target.value)} type="text"/>
             <div className='text-center'>
