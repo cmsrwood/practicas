@@ -4,17 +4,28 @@ const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
-const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['Aquí tenemos el flujo secundario'])
+const stopWork = addKeyword(['STOP WORK', '1'])
+    .addAnswer('STOP WORK')
+
+
+const otraOpcion = addKeyword(['OTRA OPCION', '2'])
+    .addAnswer('OTRA OPCION')
+    
+const otraOtraOpcion = addKeyword(['OTRA OPCION OPCION', '3'])
+.addAnswer('OTRA OPCION OPCION')
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo' , 'ola'])
     .addAnswer('Bienvenido al chat bot de Dilan')
     .addAnswer(
         [
-            'Escribe 2 para continuar con el flujo secundario',
+            'Escoja una opcion: ',
+            'STOP WORK',
+            'OTRA OPCION',
+            'OTRA OTRA OPCION'
         ],
         null,
         null,
-        [flowSecundario]
+        [stopWork,otraOpcion,otraOtraOpcion]
     )
 
 const main = async () => {
