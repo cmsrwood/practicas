@@ -48,7 +48,7 @@ const Chat = ({ socket, username, room }) => {
                 const user = item.author === username ? "": item.author
                 return (
                   <div className= {`d-flex justify-content-${direction} text-${direction}`} key={item.time}>
-                    <div className={`alert alert-${color} w-75`} role="alert">
+                    <div className={`alert alert-${color}`} role="alert">
                       <div> <strong>{user}</strong>  </div>
                       <div> {item.message} </div>
                       <div> {item.time} </div>
@@ -56,6 +56,7 @@ const Chat = ({ socket, username, room }) => {
                   </div>
                 )
             })}
+            
           </li>
         </ScrollToBottom>
           <li className="list-group-item">
