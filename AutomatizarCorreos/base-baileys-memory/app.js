@@ -4,33 +4,26 @@ const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
-const stopWork = addKeyword(['STOP WORK', '1'])
-    .addAnswer('STOP WORK')
 
 
-const otraOpcion = addKeyword(['OTRA OPCION', '2'])
-    .addAnswer('OTRA OPCION')
-    
-const otraOtraOpcion = addKeyword(['OTRA OPCION OPCION', '3'])
-.addAnswer('OTRA OPCION OPCION')
+const si = addKeyword ('si').addAnswer('Gracias por contestar')
+const no = addKeyword('no').addAnswer('REvisa tu informacion de nuevo')
 
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo' , 'ola'])
-    .addAnswer('Bienvenido al chat bot de Dilan')
-    .addAnswer(
-        [
-            'Escoja una opcion: ',
-            'STOP WORK',
-            'OTRA OPCION',
-            'OTRA OTRA OPCION'
-        ],
-        null,
-        null,
-        [stopWork,otraOpcion,otraOtraOpcion]
-    )
+const flowPrincipal = addKeyword(['hola', 'ole', 'alo' , 'ola','oda'])
+    .addAnswer(['Bienvenido al chat bot'])
+    .addAnswer('Escriba su cuadrilla: ',{capture : true}, (response,{fallback} ) => {
+        console.log ('Cuadrilla: ', response.body)
+    })
+    .addAnswer ('Escriba su nombre: ',{capture : true}, (response,{fallback} ) => {
+        console.log ('Nombre: ', response.body)
+    })
+    .addAnswer ( ['*Nombre:*',nombre, '*Cuadrilla:*', cuadrilla,'¿Esta informacion es correcta?'
+    ], [si, no] )
+
 
 const main = async () => {
     const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowPrincipal])
+    const adapterFlow = createFlow([flowPrincipal,si,no])
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({

@@ -1,12 +1,12 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '573182626850@s.whatsapp.net',
+    remoteJid: '573142758305@s.whatsapp.net',
     fromMe: false,
-    id: '61D2B2880C14B06F56B9CD93C64CEAF4',
+    id: 'CDD29494B8E708090EBA335178BCF9EE',
     participant: undefined
   },
-  messageTimestamp: 1717099368,
-  pushName: 'Abjura',
+  messageTimestamp: 1717192081,
+  pushName: 'Fidel Smoke',
   broadcast: false,
   message: Message {
     conversation: 'Ola',
@@ -16,12 +16,12 @@
     }
   },
   body: 'Ola',
-  from: '573182626850'
+  from: '573142758305'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_40da88cc-64f9-44ce-b799-f04d4be91760',
-  keyword: 'key_2c5c3123-a464-4690-9f7c-383cc215c096',
-  answer: 'Bienvenido al chat bot de Dilan',
+  ref: 'ans_7590bbf9-d705-470a-88d0-ef6d76dad118',
+  keyword: 'key_901e767b-a97c-4b56-9cc3-df2ad3e4d9f1',
+  answer: 'Bienvenido al chat bot',
   options: {
     media: null,
     buttons: [],
@@ -34,50 +34,89 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '0c0707ad44ea0c7867bd84e4fbd4f93c'
+  refSerialize: 'b8ed1f027c2dfe4fc76a6db4c18cb432'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c043d4a9-3166-4432-b7ee-0a26e5b0b626',
-  keyword: 'ans_40da88cc-64f9-44ce-b799-f04d4be91760',
-  answer: 'Escoja una opcion: \nSTOP WORK\nOTRA OPCION\nOTRA OTRA OPCION',
+  ref: 'ans_90aadc52-0056-4fab-81d7-a087b1e5083e',
+  keyword: 'ans_7590bbf9-d705-470a-88d0-ef6d76dad118',
+  answer: 'Escriba su cuadrilla: ',
   options: {
     media: null,
     buttons: [],
-    capture: false,
+    capture: true,
     child: null,
     delay: 0,
     idle: null,
     ref: null,
-    nested: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    nested: [],
     keyword: {},
-    callback: false
+    callback: true
   },
-  refSerialize: 'c5f79ddab467fce1d4c0c699939217b9'
+  refSerialize: 'f345a0bb6973e5d1e2291438fa9c3d89'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573182626850@s.whatsapp.net',
+    remoteJid: '573142758305@s.whatsapp.net',
     fromMe: false,
-    id: 'E42956B28C4D5FE5CCAC1FE4B2E98142',
+    id: 'E8A246053F0923253688612F856B93FB',
     participant: undefined
   },
-  messageTimestamp: 1717099381,
-  pushName: 'Abjura',
+  messageTimestamp: 1717192088,
+  pushName: 'Fidel Smoke',
   broadcast: false,
   message: Message {
-    conversation: 'STOP WORK',
+    conversation: 'Cuadrilla 2',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'STOP WORK',
-  from: '573182626850'
+  status: 4,
+  body: 'Cuadrilla 2',
+  from: '573142758305'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_4eed3f6a-dc2d-4ce3-b821-ac37d8fe6fae',
-  keyword: 'key_46a8e334-bb35-4ed6-b496-65be794c6c14',
-  answer: 'STOP WORK',
+  ref: 'ans_d5b32964-5a77-4f1c-9cd8-2b7abc947385',
+  keyword: 'ans_90aadc52-0056-4fab-81d7-a087b1e5083e',
+  answer: 'Escriba su nombre: ',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '6fe88f57394160bc5b920cd73f4db66a'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573142758305@s.whatsapp.net',
+    fromMe: false,
+    id: 'EAC7D8C72DC164123F88CAD737AA9EBA',
+    participant: undefined
+  },
+  messageTimestamp: 1717192093,
+  pushName: 'Fidel Smoke',
+  broadcast: false,
+  message: Message {
+    conversation: 'Fidel',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Fidel',
+  from: '573142758305'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_fcee0bae-073e-4e66-867e-f295c68cc348',
+  keyword: 'ans_d5b32964-5a77-4f1c-9cd8-2b7abc947385',
+  answer: '*Nombre:*\n\n*Cuadrilla:*\n\n¿Esta informacion es correcta?',
   options: {
     media: null,
     buttons: [],
@@ -90,52 +129,32 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '64c1ed2a9a3801c22fb4a7a989b603ab'
+  refSerialize: 'e479dd82e0c2640d6010bdd2c9669263'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573182626850@s.whatsapp.net',
+    remoteJid: '573142758305@s.whatsapp.net',
     fromMe: false,
-    id: '098DD2A6162FE0C966D107D36EE2003B',
+    id: 'C114EA64B621C300887FC9392EFDCD00',
     participant: undefined
   },
-  messageTimestamp: 1717099393,
-  pushName: 'Abjura',
+  messageTimestamp: 1717192103,
+  pushName: 'Fidel Smoke',
   broadcast: false,
   message: Message {
-    conversation: 'OTRA OPCION',
+    conversation: 'Si',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'OTRA OPCION',
-  from: '573182626850'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573182626850@s.whatsapp.net',
-    fromMe: false,
-    id: '94A7CC90DF41BA54142C81EBE46737EE',
-    participant: undefined
-  },
-  messageTimestamp: 1717099433,
-  pushName: 'Abjura',
-  broadcast: false,
-  message: Message {
-    conversation: 'Ola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Ola',
-  from: '573182626850'
+  body: 'Si',
+  from: '573142758305'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_40da88cc-64f9-44ce-b799-f04d4be91760',
-  keyword: 'key_2c5c3123-a464-4690-9f7c-383cc215c096',
-  answer: 'Bienvenido al chat bot de Dilan',
+  ref: 'ans_ee37194e-c4b3-4cd0-a4cf-0a3849a43752',
+  keyword: 'key_6aa96cf2-659f-4bae-9398-041067e61219',
+  answer: 'Gracias por contestar',
   options: {
     media: null,
     buttons: [],
@@ -148,81 +167,5 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '0c0707ad44ea0c7867bd84e4fbd4f93c'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c043d4a9-3166-4432-b7ee-0a26e5b0b626',
-  keyword: 'ans_40da88cc-64f9-44ce-b799-f04d4be91760',
-  answer: 'Escoja una opcion: \nSTOP WORK\nOTRA OPCION\nOTRA OTRA OPCION',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'c5f79ddab467fce1d4c0c699939217b9'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573182626850@s.whatsapp.net',
-    fromMe: false,
-    id: 'E06329EFC1F4B0C9E721D787A016765C',
-    participant: undefined
-  },
-  messageTimestamp: 1717099436,
-  pushName: 'Abjura',
-  broadcast: false,
-  message: Message {
-    conversation: '2',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '2',
-  from: '573182626850'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_ee30ef31-2d22-44b2-a270-1e85e19aef69',
-  keyword: 'key_273b9514-7860-43f6-a9bf-f7321215b111',
-  answer: 'OTRA OPCION',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '151ba5d011e8c54c51de89f7086f4152'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573182626850@s.whatsapp.net',
-    fromMe: false,
-    id: 'F4C168DA4E818B26AD8D00D2D6062187',
-    participant: undefined
-  },
-  messageTimestamp: 1717099440,
-  pushName: 'Abjura',
-  broadcast: false,
-  message: Message {
-    conversation: '3',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '3',
-  from: '573182626850'
+  refSerialize: '2dd0ec2a9e0030e36111f9115fb16d00'
 }

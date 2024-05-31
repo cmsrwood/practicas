@@ -23,6 +23,7 @@ enviarMail = async () => {
 
     console.log(info)
 }
+enviarMail();
 
 
 
