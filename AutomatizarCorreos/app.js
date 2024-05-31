@@ -14,7 +14,7 @@ enviarMail = async () => {
 
     const mensaje = {
         from: 'dilanfantas@gmail.com',
-        to: 'andres.romerp1473@gmail.com',
+        to: 'fideljoseespi10@gmail.com',
         subject: 'Prueba de email nodemailer',
         text: 'Prueba de email compae'
     }
