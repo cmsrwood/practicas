@@ -6,6 +6,11 @@ const multer = require('multer')
 const uniqid = require('uniquid')
 const path = require('path')
 const cors = require('cors')
+const bcrypt = require('bcrypt');
+
+
+
+// app
 const app = express()
 
 // config
@@ -51,6 +56,12 @@ const storage = multer.diskStorage({
 })
 
 
+const password = 'mi_contraseña';
+
+// Generar una contraseña encriptada
+
+
+
 // routes
 app.get('/', (req, res) => {
     req.session.username = 'dilan'
@@ -60,27 +71,30 @@ app.get('/', (req, res) => {
     res.json(`El usuario ${req.session.username} ha visitado esta página ${req.session.visitas} veces`)
 })
 
-app.post("/signup",(req,res)=>{
+app.post("/signup", (req, res) => {
 
-    conn.query("SELECT * FROM users WHERE email = ?", [req.body.email], (err, result)=>{
-    
-        id = uniqid()
+    conn.query("SELECT * FROM users WHERE email = ?", [req.body.email], (err, result) => {
 
-        if(err){
+        const id = uniqid()
+
+
+        if (err) {
             res.send(err)
         }
-        if(result.length > 0){
+        if (result.length > 0) {
             res.send("User already exists")
-        }else{
-            const q = "INSERT INTO users (id, username, email, pass) VALUES (?,?,?,?)"
+        } else {
+            const password = req.body.password
+            const hashpassword = bcrypt.hashSync(password, 10)
+            const q = "INSERT INTO users (id_user, username, email, pass) VALUES (?,?,?,?)"
             const values = [
                 id,
                 req.body.username,
                 req.body.email,
-                req.body.password
+                hashpassword
             ]
-            conn.query(q, values, (err)=>{
-                if(err){
+            conn.query(q, values, (err) => {
+                if (err) {
                     res.send(err)
                 }
                 res.send("User created successfully")
@@ -89,19 +103,25 @@ app.post("/signup",(req,res)=>{
     })
 })
 
-app.post ("/login",(req,res)=>{
+app.post("/login", (req, res) => {
 
     const username = req.body.username
     const password = req.body.password
 
-    conn.query("SELECT * FROM users WHERE username = ? AND pass = ?", [username, password], (err, data)=>{
-        if(err){
-            return res.json(err)
+    conn.query("SELECT * FROM users WHERE username = ?", [username], (err, result) => {
+
+        if (err) {
+            res.send(err)
         }
-        if(data.length > 0){
-            return res.json("Success")
-        }else{
-            return res.send("User not found")
+
+        if (result.length > 0) {
+            const hashedPassword = result[0].pass
+            const passwordMatch = bcrypt.compareSync(password, hashedPassword)
+            if (passwordMatch) {
+                res.send("Success")
+            } else {
+                res.send("Wrong password or username") 
+            }
         }
     })
 })

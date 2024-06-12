@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
@@ -29,7 +30,7 @@ export default function Signup(){
               .then(res => {
                 console.log(res)
                 Swal.fire("User created successfully!", "Welcome!", "success");
-                navigate("/")
+                navigate("/login")
               })
               .catch (err => console.log(err))
             }
