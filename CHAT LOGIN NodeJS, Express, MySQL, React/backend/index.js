@@ -7,8 +7,8 @@ const uniqid = require('uniquid')
 const path = require('path')
 const cors = require('cors')
 const bcrypt = require('bcrypt');
-
-
+const http = require('http')
+const {Server} = require('socket.io')
 
 // app
 const app = express()
@@ -128,6 +128,34 @@ app.post("/login", (req, res) => {
 
 const upload = multer({ storage: storage })
 
-app.listen(BACKEND_PORT, () => {
-    console.log(`App is running on http://localhost:${BACKEND_PORT}`)
+// chat
+const server = http.createServer(app)
+
+const io = new Server(server, {
+    cors: {
+        origin: "http://localhost:5173",
+        methods: ["GET", "POST"]
+    }
 })
+
+io.on('connection', (socket) => {
+    console.log(`User with ID: ${socket.id} has connected`)
+
+    socket.on('join_room', (data) => {
+        socket.join(data)
+        console.log(`User with ID: ${socket.id} joined room: ${data}`)
+    })
+
+    socket.on("send_message", (data) => {
+        socket.to(data.room).emit("receive_message", data)
+      });
+
+    socket.on('disconnect', () => {
+        console.log ("User disconnected: ",socket.id)
+    })
+})
+
+server.listen (BACKEND_PORT, () => {
+    console.log(`Server running on port ${BACKEND_PORT}`)
+})
+

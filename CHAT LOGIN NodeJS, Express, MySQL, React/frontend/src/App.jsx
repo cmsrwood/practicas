@@ -5,6 +5,7 @@ import HomeDefault from './pages/HomeDefault'
 import SignUp from './pages/SignUp'
 import Login from './pages/Login'
 import Chat from './pages/Chat'
+import Sala from './pages/Sala'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/signup" element={<SignUp/>}></Route>
       <Route path= "/chat" element={<Chat/>}> </Route>
+      <Route path="/sala" element={<Sala/>}></Route>
     </Routes>
     </BrowserRouter>
   )

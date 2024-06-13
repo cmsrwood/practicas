@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import Validation from './SignupValidation'
@@ -61,6 +61,7 @@ export default function Signup(){
                 </div>
                 <div className='mb-3 form-group text-center'>
                 <button type="submit" className='btn btn-primary'> Sign up </button>
+                <Link to="/login" className='ms-3'>Login</Link>
                 </div>
             </form>
         </div>

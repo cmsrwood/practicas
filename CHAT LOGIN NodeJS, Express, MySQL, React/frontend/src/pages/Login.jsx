@@ -25,7 +25,7 @@ export default function Signin() {
                 console.log(res)
                 if (res.data==="Success"){
                     Swal.fire("You logged in successfully!", "Welcome!", "success");
-                    navigate("/chat")
+                    navigate("/sala")
                 }
                 else{
                   Swal.fire("Wrong username or password!", "Try again!", "error");
