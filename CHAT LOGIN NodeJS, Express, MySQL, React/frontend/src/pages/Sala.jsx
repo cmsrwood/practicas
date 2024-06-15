@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import io from 'socket.io-client'
 import Chat from './Chat'
 import axios from 'axios'
 
 const socket = io.connect("http://localhost:8800")
 
+
 function Sala() {
+  const navigate = useNavigate()
   const [username, setUsername] = useState("")
   const [room, setRoom] = useState("")
   const [showChat, setShowChat] = useState(false)
@@ -17,10 +20,19 @@ function Sala() {
     }
   }
 
+  axios.defaults.withCredentials = true
+
   useEffect(() => {
-    axios.get("http://localhost:8800/login")
-    .then(res => console.log(res))
-    .catch(err => console.log(err))
+    axios.get("http://localhost:8800/session")
+      .then(res =>{
+        if (res.data.loggedIn) {
+          setUsername(res.data.username)
+          console.log(res)
+        } else {
+          navigate("/login")
+        }
+      })
+      .catch(err => console.log(err))
   }, [])
 
   return (
@@ -32,8 +44,6 @@ function Sala() {
         </div>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
-            <label htmlFor="username" className='form-label' >Username:</label>
-            <input className='form-control my-2' placeholder='Username...' onKeyDown={(e) => e.key === "Enter" && joinRoom()} onChange={(e) => setUsername(e.target.value)} type="text"/>
             <label htmlFor="room" className='form-label' >Sala:</label>
             <input className='form-control my-2' placeholder='ID de la sala' onKeyDown={(e) => e.key === "Enter" && joinRoom()} onChange={(e) => setRoom(e.target.value)} type="text"/>
             <div className='text-center'>

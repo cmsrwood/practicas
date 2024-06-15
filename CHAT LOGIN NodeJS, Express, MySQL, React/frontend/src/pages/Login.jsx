@@ -6,9 +6,10 @@ import Swal from 'sweetalert2';
 
 export default function Signin() {
 
+  axios.defaults.withCredentials = true
 
   useEffect(() => {
-    axios.get("http://localhost:8800/login")
+    axios.get("http://localhost:8800/session")
       .then(res => console.log(res))
       .catch(err => console.log(err))
   }, [])

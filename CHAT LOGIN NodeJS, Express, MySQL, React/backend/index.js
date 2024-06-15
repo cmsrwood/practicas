@@ -9,7 +9,8 @@ const cors = require('cors')
 const bcrypt = require('bcrypt');
 const http = require('http')
 const {Server} = require('socket.io')
-
+const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser')
 // app
 const app = express()
 
@@ -44,9 +45,15 @@ app.use(session({
 }))
 
 // middlewares
-app.use(cors())
+app.use(cors({
+    credentials: true,
+    origin: [FRONTEND_URL], 
+    methods: ["GET", "POST", "PUT", "DELETE"]
+}))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use (cookieParser())
+app.use(bodyParser.json());
 
 
 
@@ -110,15 +117,14 @@ app.post("/login", (req, res) => {
             res.send(err);
             return;
         }
-
         if (result.length === 0) {
             res.send("Usuario no encontrado");
             return;
         }
-
         const user = result[0];
-        req.session.user = user;
-        console.log (req.session.user)
+
+        req.session.username = user.username;
+        console.log (req.session.username)
         
         bcrypt.compare(password, user.pass, (err, isMatch) => {
             if (err) {
@@ -130,15 +136,17 @@ app.post("/login", (req, res) => {
                 return;
             }
             res.send("Success");
+            
         });
+
     });
 });
 
-app.get("/login", (req, res) => {
+app.get("/session", (req, res) => {
     if (req.session.username) {
-        res.send({loggedIn: true, username: req.session.username});
+        res.json({loggedIn: true, username: req.session.username});
     } else {
-        res.send({loggedIn: false});
+        res.json({loggedIn: false});
     }
 });
 
