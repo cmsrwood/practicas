@@ -31,18 +31,23 @@ const conn = mysql.createConnection(options)
 // session
 const sessionStore = new MySQLStore(options)
 app.use(session({
-    key: 'session_cookie_name',
+    key: 'session_user',
     secret: 'secret',
     resave: false,
     saveUninitialized: false,
-    store: sessionStore
+    store: sessionStore,
+    cookie: {
+        secure: false, 
+        httpOnly: false,
+        maxAge: 1000 * 60 * 60 * 24 * 7
+    }
 }))
-
 
 // middlewares
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+
 
 
 // multer
@@ -55,21 +60,11 @@ const storage = multer.diskStorage({
     }
 })
 
-
-const password = 'mi_contraseña';
-
 // Generar una contraseña encriptada
 
 
 
 // routes
-app.get('/', (req, res) => {
-    req.session.username = 'dilan'
-    req.session.password = '1234'
-    req.session.email = 'Zk6uT@example.com'
-    req.session.visitas = req.session.visitas ? req.session.visitas + 1 : 1
-    res.json(`El usuario ${req.session.username} ha visitado esta página ${req.session.visitas} veces`)
-})
 
 app.post("/signup", (req, res) => {
 
@@ -103,28 +98,54 @@ app.post("/signup", (req, res) => {
     })
 })
 
-app.post("/login", (req, res) => {
 
-    const username = req.body.username
-    const password = req.body.password
+app.post("/login", (req, res) => {
+    console.log (req.sessionID)
+    const username = req.body.username;
+    const password = req.body.password;
+    
 
     conn.query("SELECT * FROM users WHERE username = ?", [username], (err, result) => {
-
         if (err) {
-            res.send(err)
+            res.send(err);
+            return;
         }
 
-        if (result.length > 0) {
-            const hashedPassword = result[0].pass
-            const passwordMatch = bcrypt.compareSync(password, hashedPassword)
-            if (passwordMatch) {
-                res.send("Success")
-            } else {
-                res.send("Wrong password or username") 
-            }
+        if (result.length === 0) {
+            res.send("Usuario no encontrado");
+            return;
         }
-    })
-})
+
+        const user = result[0];
+        req.session.user = user;
+        console.log (req.session.user)
+        
+        bcrypt.compare(password, user.pass, (err, isMatch) => {
+            if (err) {
+                res.send(err);
+                return;
+            }
+            if (!isMatch) {
+                res.send("Contraseña incorrecta");
+                return;
+            }
+            res.send("Success");
+        });
+    });
+});
+
+app.get("/login", (req, res) => {
+    if (req.session.username) {
+        res.send({loggedIn: true, username: req.session.username});
+    } else {
+        res.send({loggedIn: false});
+    }
+});
+
+app.get ("/logout", (req, res) => {
+    req.session.destroy();
+    res.send("Success");
+});
 
 const upload = multer({ storage: storage })
 
@@ -139,11 +160,9 @@ const io = new Server(server, {
 })
 
 io.on('connection', (socket) => {
-    console.log(`User with ID: ${socket.id} has connected`)
 
     socket.on('join_room', (data) => {
         socket.join(data)
-        console.log(`User with ID: ${socket.id} joined room: ${data}`)
     })
 
     socket.on("send_message", (data) => {
@@ -151,11 +170,11 @@ io.on('connection', (socket) => {
       });
 
     socket.on('disconnect', () => {
-        console.log ("User disconnected: ",socket.id)
     })
 })
 
 server.listen (BACKEND_PORT, () => {
-    console.log(`Server running on port ${BACKEND_PORT}`)
+    console.log(`Server running on http://localhost:${BACKEND_PORT}`)
 })
+
 

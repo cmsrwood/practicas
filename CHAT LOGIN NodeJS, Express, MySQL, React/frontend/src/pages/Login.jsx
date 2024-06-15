@@ -1,10 +1,17 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
 export default function Signin() {
+
+
+  useEffect(() => {
+    axios.get("http://localhost:8800/login")
+      .then(res => console.log(res))
+      .catch(err => console.log(err))
+  }, [])
 
      //hooks
      const [user,setUser] = useState({
@@ -36,6 +43,8 @@ export default function Signin() {
           console.log(err)
         }
       }
+
+      
 
   return (
     <div className=''>

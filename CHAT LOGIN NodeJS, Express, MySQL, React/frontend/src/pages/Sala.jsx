@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import io from 'socket.io-client'
 import Chat from './Chat'
+import axios from 'axios'
 
 const socket = io.connect("http://localhost:8800")
 
@@ -15,6 +16,13 @@ function Sala() {
       setShowChat(true)
     }
   }
+
+  useEffect(() => {
+    axios.get("http://localhost:8800/login")
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
+  }, [])
+
   return (
     <div className='chat container p-5'>
       {!showChat?
