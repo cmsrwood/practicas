@@ -28,9 +28,12 @@ export default function Signup(){
             if (err.email === "" && err.password === ""){
               axios.post("http://localhost:8800/signup",user)
               .then(res => {
-                console.log(res)
+                if (res.data==="User created successfully"){
                 Swal.fire("User created successfully!", "Welcome!", "success");
-                navigate("/login")
+                navigate("/login")}
+                else if (res.data==="User already exists"){
+                  Swal.fire("User already exists!", "Try again!", "error");
+                }
               })
               .catch (err => console.log(err))
             }

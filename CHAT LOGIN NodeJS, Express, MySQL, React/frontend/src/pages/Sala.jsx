@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import io from 'socket.io-client'
 import Chat from './Chat'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 
 const socket = io.connect("http://localhost:8800")
 
@@ -20,6 +21,8 @@ function Sala() {
     }
   }
 
+ 
+
   axios.defaults.withCredentials = true
 
   useEffect(() => {
@@ -35,12 +38,32 @@ function Sala() {
       .catch(err => console.log(err))
   }, [])
 
+  const logout = async (e) =>{
+    e.preventDefault()
+    try{
+          axios.get("http://localhost:8800/logout")
+          .then(res => {
+            if (res.data === "Success"){
+              Swal.fire("You logged out successfully!", "Welcome!", "success")
+              navigate("/login")
+            }
+          })
+          .catch (err => console.log(err))
+    }catch(err){
+      console.log(err)
+    }
+  }
+
   return (
     <div className='chat container p-5'>
       {!showChat?
         <div className="card shadow">
         <div className="card-header">
           <h3>Unirme al chat</h3>
+          <div> 
+            <p>Bienvenido {username}</p>
+            <button className='btn btn-danger my-2' onClick={logout}>Cerrar sesión <i className="bi bi-box-arrow-right"></i></button>
+          </div>
         </div>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">

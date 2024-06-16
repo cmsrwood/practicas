@@ -6,11 +6,21 @@ import Swal from 'sweetalert2';
 
 export default function Signin() {
 
+  if (localStorage.getItem("user")) {
+    window.location.href = "/sala"
+  }
+
   axios.defaults.withCredentials = true
 
   useEffect(() => {
     axios.get("http://localhost:8800/session")
-      .then(res => console.log(res))
+      .then(res =>{
+        if (res.data.loggedIn) {
+          navigate("/sala")
+        } else {
+          console.log("Not logged in")
+        }
+      })
       .catch(err => console.log(err))
   }, [])
 

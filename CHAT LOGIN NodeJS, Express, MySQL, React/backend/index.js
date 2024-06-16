@@ -75,7 +75,7 @@ const storage = multer.diskStorage({
 
 app.post("/signup", (req, res) => {
 
-    conn.query("SELECT * FROM users WHERE email = ?", [req.body.email], (err, result) => {
+    conn.query("SELECT * FROM users WHERE email = ? OR username = ?", [req.body.email , req.body.username], (err, result) => {
 
         const id = uniqid()
 
@@ -176,9 +176,6 @@ io.on('connection', (socket) => {
     socket.on("send_message", (data) => {
         socket.to(data.room).emit("receive_message", data)
       });
-
-    socket.on('disconnect', () => {
-    })
 })
 
 server.listen (BACKEND_PORT, () => {

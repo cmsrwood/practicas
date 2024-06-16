@@ -1,9 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import ScrollToBottom from 'react-scroll-to-bottom'
 // eslint-disable-next-line react/prop-types
 const Chat = ({ socket, username, room }) => {
 
+    const navigate = useNavigate()
     const [currentMessage, setCurrentMessage] = useState("")
     const [messagesList, setMessagesList] = useState([])
 
@@ -39,7 +41,10 @@ const Chat = ({ socket, username, room }) => {
         <div className="card-header  ">
           <div className="d-flex justify-content-between">
             <h3>Live chat | Room: {room}</h3>
-            <h3>{username} (Tú)</h3>
+            <div>
+              <h3>{username} (Tú)</h3>
+              <button className="btn btn-danger" onClick={() => navigate(0)}>Salir de la sala <i className="bi bi-sign-out"></i></button>
+            </div>
           </div>
           <small>Conectados: {username} </small>
         </div>
