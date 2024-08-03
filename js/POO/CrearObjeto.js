@@ -8,3 +8,5 @@ let persona = {
     edad : 20
 }
 console.log(persona)
+console.log(persona.email)
+
