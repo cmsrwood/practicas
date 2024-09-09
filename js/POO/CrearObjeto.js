@@ -1,6 +1,3 @@
-let x = 10
-console.log (x.length)
-
 let persona = {
     nombre: 'Dilan',
     apellido: 'Lopez',
